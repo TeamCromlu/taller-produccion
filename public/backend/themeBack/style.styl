@@ -1,0 +1,83 @@
+.Backend
+	background-color #f5f7f8
+	margin-top 60px
+	width 100%
+	&__box
+		width 100%
+		margin 0 auto
+	&__class
+		width 90%
+		margin 0 auto
+	&__title
+		color white
+		box-sizing border-box
+		background-image url('../../image/backend.png')
+		background-color #00374B
+		text-align left
+		background-repeat no-repeat
+		background-size contain
+		width 100%
+		font-size 1.8em
+		padding .7em 0 .7em 3em
+	&__classContent
+		margin-top 1.5em
+		width 100%
+	&__linkClass
+		text-decoration none
+	&__content
+		border 1px solid #00374B
+		margin-bottom 1em
+		height 102px
+		align-items center
+		flex-direction row
+		display flex
+		// margin-bottom 1.5em
+		width 100%
+		border-radius 5px
+		background-color white
+		// padding-bottom 1em
+	&__contentTheme
+		background-color #00374B
+		// min-width 70px
+		height 102px
+		border-radius 3px 0 0 3px
+	&__icon
+		color rgba(252, 252, 252, 0.44)
+		font-size 80px
+		line-height 102px
+	&__contentText
+		color #252525
+		margin-left .5em
+		text-align left
+	&__titleClass
+		font-size 1.7em
+	&__textClass
+		font-size 1.4em
+	&__hashtag 
+		display none		
+				
+@media screen and (min-width 1000px)
+	.Backend
+		&__class
+			display flex
+			flex-direction row
+			margin 0
+			width 100%
+		&__classContent
+			margin 1.1em 0
+			height 495px
+			width 70%
+			overflow-y scroll
+			scroll()
+		&__content
+			width 95%
+			margin 0 auto 1em auto
+		&__contentText
+			margin-left 1em
+		&__contentEnd
+			margin 0 auto
+		&__hashtag
+			margin .7em 1em
+			padding .2em 0
+			display block
+			width 30%

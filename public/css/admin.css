@@ -1,0 +1,40 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #FBFBFB;
+	font-family: 'Arial' , sans-serif;
+}
+.admin{
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+form{
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+}
+label{
+	font-size:  1.5em;
+	text-align: left;
+}
+input{
+	padding: 1em;
+	display: block;
+	margin: .5em auto;
+	font-size: 1em;
+}
+
+input[type="submit"]{
+	background: #37CE5E;
+	color: white;
+	border: none ;
+	display: block;	
+	margin: 0 auto;
+	width: 	14.4em;
+}

@@ -1,0 +1,21 @@
+//- <!DOCTYPE html>
+html(lang="es")
+head
+	meta(charset="UTF-8")
+	title Login Admin
+	link(rel="stylesheet", href="/css/usuarios.css")
+body
+	h2 Usuarios registrados
+	//- a(href="/admin/panel", class="btn-action") Actualizar
+	a(href="/ingresar-admin", class="btn-action") Salir
+	ul
+		each user in users
+			li
+				img(src="#{user.photo}")
+				h3 #{user.name}
+				a(href="#", class="usuario  color-guess") Invitado
+				p ID base de datos: #{user._id}
+				p ID red social: #{user.provider_id}
+				P Fecha registro: #{user.createdAt}
+				form(action="/admin/usuarios/borrar/#{user._id}", method="post")
+					input(type="submit", class="delete")

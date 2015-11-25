@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+html(lang="es")
+head
+	meta(charset="UTF-8")
+	title Login Admin
+	link(rel="stylesheet", href="css/admin.css")
+body
+	.admin
+		h1 ¿Quien Eren?¿Que haces en mi kasa?
+		form(action="/admin/panel", method="post")
+			label Tu nombre 
+			input(type="text", name="usuario")
+			label Tu contraseña
+			input(type="password", name="clave")
+			input(type="submit", name="enviar")
+	

@@ -1,0 +1,39 @@
+header.Header
+	.Header__box
+		.Header__title
+			a.header__home(href="#")
+				figure.Header__logo
+					img(src="../image/cromlu.png", alt='cromlu.com')
+				h1.Header__name Cromlu
+		.Header__mainMobile
+			a.Header__link.icon-menu
+			
+		.Header__mainDesktop
+			nav.Header__nav
+				ul.Header__list
+					li.Header__option
+						a.Header__link Mis cursos
+					//- li.Header__option
+					//- 	a.Header__link Mis cursos
+			.Header__user
+				//- .Header__label
+				.Header__userDesktop
+					figure.Header__avatar
+						img(src="../image/avatar.jpg", alt='avatar.com', width="40px")
+					a.Header__userName Maycon
+					.Header__iconDown.icon-down
+	ul.Header__listDesktop
+		li.Header__linkDesktop
+			div.icon-user2.Header__iconExit
+			a.Header__button Mi Perfil
+		li.Header__linkDesktop
+			div.icon-exit.Header__iconExit
+			a.Header__button Salir
+	.Header__userOption
+		ul.Header__userList
+			li.Header__optionMobile
+				a.Header__linkMobile Mi perfil
+			li.Header__optionMobile
+				a.Header__linkMobile Mis cursos
+			li.Header__optionMobile
+				a.Header__linkMobile Salir

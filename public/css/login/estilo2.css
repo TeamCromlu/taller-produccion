@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #f2f2f2;
+  font-family: Open Sans;
+  color: #2e2f33;
+}
+.Header-Main {
+  background: #fff;
+}
+.Header-Main__box {
+  text-align: left;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.Header-Main__logo {
+  display: block;
+  margin-left: 1em;
+}
+.Header-Main__logo a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-family: 'Arial' sans-serif;
+}
+.Header-Main__logo a img {
+  width: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.Header-Main__logo a h1 {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.5rem;
+}
+.Networking__box {
+  background: #fff;
+  max-width: 500px;
+  height: auto;
+  padding: 1.5em;
+  margin: 3em auto;
+  text-align: center;
+}
+.Networking h2 {
+  text-align: center;
+  font-size: 1.8em;
+}
+.Networking a {
+  color: #fff;
+  display: block;
+  padding: 1em;
+  font-size: 1.2em;
+  text-decoration: none;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin: 1em 3em;
+}
+.Networking a.color-facebook {
+  background: #3b5998;
+}
+.Networking a.color-twitter {
+  background: #54abee;
+}
+.Networking .ingresa-curso{
+    display : block;
+    padding : .5em;
+    color : blue;
+}
+@media (min-width: 768px) {
+  .happy__box {
+    padding: 4em;
+    padding-top: 1em;
+  }
+}

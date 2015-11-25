@@ -1,0 +1,104 @@
+.Chat
+	display none
+	// height auto
+	
+@media screen and (min-width 767px)
+	// 	margin 5px 0 5px 7px
+	// 	display inline-block
+	// 	// float right
+	// 	&__list
+	// 		height 500px
+	// 		margin .2em 0
+	// 	&__sendMessage
+	// 		margin 0			
+	.Chat
+		// flex-wrap wrap
+		// display inline-block
+		// align-items stretch
+		// display flex
+		position fixed
+		top 70px
+		bottom 10px
+		// z-index 80
+		display inline-block
+		text-align left
+		margin 0 .4em
+		// width 100%
+		width 38%
+		// max-height 55s0px
+		&__box
+			// margin 0 .5em 
+			width  99%
+		&__sendMessage
+			margin-bottom .5em
+			text-align center
+			width 100%
+			background #CBF0FF
+			border-radius 5px
+			height 60px
+		// &__sendBox
+		// 	width 100%
+		// 	border-radius 5px
+		// 	padding 0.5em
+		// 	background #cbf0ff
+		    margin 0.5em 0
+		&__message
+			height 50px
+			max-width 94%
+			width 94%
+			// padding 8px
+			vertical-align top
+			outline none
+			border none
+			max-height 50px
+			margin 5px 0
+			font-size 14px
+			border-radius 5px
+		&__list
+			// flex-direction column-reverse
+			align-items stretch
+			flex-direction column
+			// flex-wrap wrap
+			display flex
+			overflow-x hidden
+			overflow-y scroll
+			// white-space nowrap
+			// overflow-x hidden
+			max-height 500px
+			list-style none
+			// margin .2em auto
+			scroll()
+		&__item
+			border-radius 5px
+			padding .5em
+			background #CBF0FF
+			margin-bottom .3em
+		&__title
+			width 100%
+			// padding .3em .5em
+			border-radius 4px 4px 0 0
+		&__avatarUser
+			display inline-block
+			img
+				border-radius 50%
+		&__nameUser
+			line-height 30px
+			margin-left .3em
+			display inline-block
+			vertical-align top
+			h3
+				font-weight bold
+		&__coment
+			width 100%
+			vertical-align top
+		&__text
+			font-size 14px
+			margin 0 auto
+			// padding 5px
+			// width 95%
+			padding .2em
+			border-radius 5px
+			height auto
+			background white
+			// width 100%
+			// margin .2em 0

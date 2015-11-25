@@ -1,0 +1,12 @@
+section.Chat
+	.Chat__box
+		.Chat__sendMessage
+			//- .Chat__sendBox
+				//- figure.Chat__avatarUser.first
+					img(src="public/image/avatar.jpg", alt="", width="40px")
+			form(action="")
+				input.Chat__message(type="text",id="m",autocomplete="off", placeholder="Enviar notas...")
+				button#boton(style="display:none;") Send
+		ul.Chat__list#messages
+						h2(id="avatar" value="#{user.photo}")
+						h3(id="usuario" value="#{user.name}")

@@ -1,0 +1,37 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='UTF-8')
+    title Cromlu: Tu propio portafolio profesional en la web 24/7 @TeamCromlu
+    meta(name='viewport', content='width=device-width, minimum-scale=1, maximum-scale=1')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans|Raleway', rel='stylesheet', type='text/css')
+    meta(name='description', content='Diseñamos tu propio portafolio profesional en la web 24/7 de forma efectiva, Comparte tu experiencia profesional en un solo lugar, donde quieras y cuando quieras @TeamCromlu')
+    link(rel='icon', type='image/png', href='send/image/cromlu.ico')
+    // Vista para facebook
+    meta(property='og:title', content='Cromlu: Tu propio portafolio profesional en la web 24/7')
+    meta(property='og:description', content='Comparte tu experiencia profesional en un solo lugar, donde quieras y cuando quieras @TeamCromlu')
+    meta(property='og:image', content='http://cromlu.com/comprar.png')
+    meta(property='og:url', content='http://cromlu.com/comprar')
+    link(rel='stylesheet', href='./css/login/estilo2.css')
+    link(rel="stylesheet", href="css/admin.css")
+  body
+    header.Header-Main
+      .Header-Main__box
+        figure.Header-Main__logo
+          a(href='/')
+            img(src='image/cromlu.png', alt='')
+            h1 Cromlu
+    section.Networking 
+     .Networking__box
+       h2 Ingresa a tus clases
+       a(href="auth/facebook", class="color-facebook") Facebook
+       a(href="auth/twitter", class="color-twitter") Twitter
+       p #{message}
+     //- .admin
+     //-    h1 ¿Tienes un acceso por usuario y contraseña?
+     //-    form(action="/cursos", method="post")
+     //-      label Tu nombre 
+     //-      input(type="text", name="usuario")
+     //-      label Tu contraseña
+     //-      input(type="password", name="clave")
+     //-      input(type="submit", name="enviar")

@@ -1,0 +1,169 @@
+.Header
+	position fixed
+	height 60px
+	z-index 1
+	background white
+	box-shadow 0px 4px 3px rgba(0,0,0,.24)
+	width 100%
+	&__box
+		justify-content space-between
+		display flex
+		flex-direction row
+		height 60px
+		align-items center
+	&__title
+		text-align left
+		padding 3px 5px
+		// display inline-block
+	&__home
+		text-decoration none
+	&__logo
+		// height 50px
+		width 50px
+		display inline-block
+		img 
+			height 50px
+			width 50px
+	&__name
+		padding-left 5px
+		line-height 55px
+		color black
+		vertical-align top
+		font-size 1.5em
+		display inline-block
+		text-decoration none		
+	// &__perfil
+	// 	// float right
+	// 	display inline-block
+	&__avatar
+		// display none
+		width 40px
+		img 
+			border-radius 50%
+			width 100%
+	// &__main
+	// 	top 0
+	// 	right 0
+	// 	position absolute
+	// 	display inline-block
+	// 	margin 13px 5px
+	  	
+	&__link
+		line-height 60px
+		height 60px
+		cursor pointer
+		margin-right 10px
+		// border-radius 5px
+		// padding 5px
+		color #00E2D4
+		// background-color #00E2D4
+		// text-transform uppercase
+		// font-weight bold 
+		// color white
+		font-size 2rem
+		text-decoration none
+		display block
+	&__nav
+		display inline-block
+	&__mainDesktop
+		display none
+	&__userList
+		top 60px
+		left -100%
+		background white
+		position absolute
+		width 100%
+		height auto
+		list-style none
+	&__optionMobile
+		border-bottom 1px solid gray
+		text-align center
+	&__optionMobile:first-child
+		border-top 1px solid gray
+	&__linkMobile
+		color black
+		text-decoration none
+		cursor pointer
+		width 100%
+		display block
+		padding 20px 0
+		font-weight bold
+		font-size 1.5em
+	&__listDesktop
+		display none
+	
+@media screen and (min-width 767px)
+	.Header
+		height 60px
+		// &__title
+		// 	display inline-block
+		&__mainMobile
+			display none
+			a
+				display none
+		&__mainDesktop
+			align-items center
+			display flex
+			flex-direction row
+			justify-content space-between
+		&__listDesktop
+			// position absolute
+			// top -60px
+			right -100%
+			display flex
+			flex-direction column
+			align-items flex-end
+			position relative
+			top 0
+		&__list
+			display flex
+			flex-direction row
+			justify-content space-between
+		&__option
+			list-style none
+		&__link
+			font-size 1.2rem
+			font-weight bold
+		&__user
+			border-left 1px solid #00E6D5	
+		&__userDesktop
+			cursor pointer
+			padding .5em
+			list-style none
+			display flex
+			flex-direction row
+			align-items center
+			// justify-content space-between
+		&__linkDesktop
+			background #00B383
+			cursor pointer
+			height 40px
+			width 200px
+			display flex
+			color white
+			align-items center
+			justify-content flex-star
+		&__button
+			font-size 1.5rem
+			text-decoration none
+			color white
+			// font-weight bold
+		&__iconExit
+			margin .5em
+			font-size 1.5em
+		&__listLink
+			display none
+		&__userName
+			display block
+			margin-left .2em
+			font-weight bold
+			font-size 1.2rem
+			color #00E6D5
+		&__iconDown
+			color #009290
+			font-size 1rem
+			margin-left .4em
+		&__userOption
+			display none
+		// &__userList
+			// list-style none

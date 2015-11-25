@@ -1,0 +1,19 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, minimum-scale=1, maximum-scale=1")
+		meta(name="description",content="Diseñamos tu propio portafolio profesional en la web 24/7 de forma efectiva, Comparte tu experiencia profesional en un solo lugar, donde quieras y cuando quieras @TeamCromlu")
+		title Cromlu Chat
+		link(rel="stylesheet",href="./css/style.css")
+		link(rel="icon",type="image/png",href="../image/cromlu.ico")
+		link(href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway",rel="stylesheet",type="text/css")
+
+	body
+		include ./header/template.jade
+		.body
+			include ./video/template.jade
+			include ./chat/template.jade
+
+		script(src="http://code.jquery.com/jquery-1.11.2.min.js")
+		script(type="text/javascript",src="public/js/code.js")
