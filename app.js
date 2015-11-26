@@ -30,7 +30,7 @@ var llamada = require('./routes/admin');
 //mongodb://cromlu:cromlu1221@ds059654.mongolab.com:59654/heroku_cwms79w3
 // MONGOLAB_URI='mongodb://cromlu:cromlu1221@ds059654.mongolab.com:59654/heroku_cwms79w3'
 // set MONGODB_LOCAL = 'mongodb://localhost:27017/passport-example'
-mongoose.connect(' mongodb://cromlu:cromlu1221@ds059634.mongolab.com:59634/passport-example', function(err, res) {
+mongoose.connect('mongodb://cromlu:cromlu1221@ds059654.mongolab.com:59654/heroku_cwms79w3', function(err, res) {
   if(err) throw err;
   console.log('Conectado con éxito a la BD');
 });
