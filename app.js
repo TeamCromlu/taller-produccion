@@ -28,9 +28,9 @@ var llamada = require('./routes/admin');
 
 // Conexión a la base de datos de MongoDB que tenemos en 
 //mongodb://cromlu:cromlu1221@ds059654.mongolab.com:59654/heroku_cwms79w3
-MONGOLAB_URI='mongodb://cromlu:cromlu1221@ds059654.mongolab.com:59654/heroku_cwms79w3'
-//MOGNODB_LOCAL = 'mongodb://localhost:27017/passport-example'
-mongoose.connect('MONGOLAB_URI', function(err, res) {
+// MONGOLAB_URI='mongodb://cromlu:cromlu1221@ds059654.mongolab.com:59654/heroku_cwms79w3'
+// set MONGODB_LOCAL = 'mongodb://localhost:27017/passport-example'
+mongoose.connect(' mongodb://cromlu:cromlu1221@ds059634.mongolab.com:59634/passport-example', function(err, res) {
   if(err) throw err;
   console.log('Conectado con éxito a la BD');
 });
