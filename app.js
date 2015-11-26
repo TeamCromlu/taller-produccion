@@ -7,7 +7,6 @@ var data_admin = {
 
 // Archivo principal del Backend, configuración del servidor
 // y otras opciones
-
 var express = require('express'); // Express: Framework HTTP para Node.js
 var routes = require('./routes'); // Dónde tenemos la configuración de las rutas
 var path = require('path');
@@ -27,10 +26,7 @@ require('./models/messages');
 var llamada = require('./routes/admin');
 
 // Conexión a la base de datos de MongoDB que tenemos en 
-//mongodb://cromlu:cromlu1221@ds059654.mongolab.com:59654/heroku_cwms79w3
-// MONGOLAB_URI='mongodb://cromlu:cromlu1221@ds059654.mongolab.com:59654/heroku_cwms79w3'
-// set MONGODB_LOCAL = 'mongodb://localhost:27017/passport-example'
-mongoose.connect('mongodb://cromlu:cromlu1221@ds057934.mongolab.com:57934/taller', function(err, res) {
+mongoose.connect(config.mongodb.data_connect, function(err, res) {
   if(err) throw err;
   console.log('Conectado con éxito a la BD');
 });

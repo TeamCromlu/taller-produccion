@@ -10,6 +10,9 @@ var config = {
 	admin:{
 		user : 'cromlu',
 		pass : 'cromlu1221'
+	},
+	mongodb:{
+		data_connect: 'mongodb://cromlu:cromlu1221@ds057934.mongolab.com:57934/taller'
 	}
 };
 
