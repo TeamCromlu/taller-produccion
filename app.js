@@ -15,11 +15,13 @@ var parsero = require('body-parser');
 var mongoose = require('mongoose'); // Mongoose: Libreria para conectar con MongoDB
 // var User = mongoose.model('User');
 var User = require('./models/user').User;
+var Msg = require('./models/messages').Msg;
 var passport = require('passport'); // Passport: Middleware de Node que facilita la autenticación de usuarios
 
 
 // Importamos el modelo usuario y la configuración de passport
 require('./models/user');
+require('./models/messages');
 
 
 var llamada = require('./routes/admin');
@@ -29,6 +31,7 @@ mongoose.connect('mongodb://localhost:27017/passport-example', function(err, res
   if(err) throw err;
   console.log('Conectado con éxito a la BD');
 });
+
 
 // Iniciamos la aplicación Express
 var app = express();
@@ -128,7 +131,7 @@ app.post('/admin/panel', function  (req, res){
           return res.render('users', {master : admin.usuario, users : users});
         });
       // });
-
+ 
         // Delete usuer
         app.post('/admin/usuarios/borrar/:id', function (req, res){
           User.findById(req.params.id, function (err, users) {
@@ -152,8 +155,6 @@ app.post('/admin/panel', function  (req, res){
     }
 });
 
-
-
 app.get('/cursos/frontend', function (req, res){
 	res.render("./frontend/index", {
     title: 'Taller de Frontend',
@@ -176,12 +177,38 @@ app.get('/cursos/git', function (req, res){
 });
 
 app.get('/live', function (req, res){
-  res.render("./live/index", {
-    title: 'En vivo',
-    user: req.user
-  });
-});
+  Msg.find(function (err, messages) {
 
+            if(err) res.send(500, err.message);
+            var data = [];
+            var hola = [];
+
+                // messages.forEach( function (msg){
+                // console.log(parse_msg)
+                  // for (var i =0; i<= 10; i++){
+                    var limite = messages.length -1;
+                    for(var i = limite; i >= 0 ; i--){
+                      // console.log(messages[i].msg);
+                      var parse_msg = messages[i].msg;
+                      data[limite - i] = JSON.parse(parse_msg);
+                      console.log(data[limite - i])
+                    // }
+                  }
+                // return data;
+              // });
+
+              
+            console.log('GET/messages')
+            console.log(data);
+
+              // res.status(200).jsonp(messages);
+            return res.render("./live/index", {
+                title: 'En vivo',
+                user: req.user,
+                messages : data
+            });
+    });
+});
 
 
 /* Rutas de Passport */
@@ -205,9 +232,32 @@ app.get('/auth/facebook/callback', passport.authenticate('facebook',
   { successRedirect: '/cursos', failureRedirect: '/login-again'}
 ));
 
-
+// Requisito para usar la DB y usar save
+// var mongoose = require('mongoose');
+var Msg = mongoose.model('Message');
 io.on('connection', function (socket){
   socket.on('chat message', function (msg){
+    // Evento save de messages
+      Msg.find(function (err, messages) {
+        if(err) res.send(500, err.message);
+        // Volviendo a cadena el dato de mensaje recibido para la base de datos
+          var send_msg = msg;
+          console.log(send_msg);
+          var data = JSON.stringify(send_msg);
+          console.log(data);
+          // creando el schema del mensaje
+          var messages = new Msg({
+           name        : "usuario",
+           msg         :  data
+           // photo       : profile.photos[0].value
+          });
+          //almacenandolo 
+          messages.save(function(err) {
+           if(err) throw err;
+           // done(null, false);
+          });
+    });
+
     io.emit('chat message',  msg);
   });
 });

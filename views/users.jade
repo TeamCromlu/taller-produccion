@@ -18,4 +18,4 @@ body
 				p ID red social: #{user.provider_id}
 				P Fecha registro: #{user.createdAt}
 				form(action="/admin/usuarios/borrar/#{user._id}", method="post")
-					input(type="submit", class="delete")
+					input(type="submit", class="delete", value="expulsar") 
