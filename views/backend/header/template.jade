@@ -1,9 +1,9 @@
 header.Header
 	.Header__box
 		.Header__title
-			a.header__home(href="#")
+			a.header__home(href="/cursos")
 				figure.Header__logo
-					img(src="/image/cromlu.png", alt='cromlu.com')
+					img(src="../image/cromlu.png", alt='cromlu.com')
 				h1.Header__name Cromlu
 		.Header__mainMobile
 			a.Header__link.icon-menu
@@ -11,6 +11,8 @@ header.Header
 		.Header__mainDesktop
 			nav.Header__nav
 				ul.Header__list
+					li.Header__option.rec.ocultar
+						a.Header__link(href="/live") 🎥 Estamos en vivo
 					li.Header__option
 						a.Header__link(href="/cursos") Mis cursos
 					//- li.Header__option

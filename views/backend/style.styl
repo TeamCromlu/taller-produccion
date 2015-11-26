@@ -1,0 +1,45 @@
+*
+	// height 100vh	
+	margin 0
+	padding 0
+	font-size 16px
+	font-family 'Questrial' sans-serif
+	// font-family Arial, sans-serif
+
+scroll()
+	&::-webkit-scrollbar
+		background white
+		-webkit-box-shadow inset 0 0 3px rgba(0,0,0,.4)
+		-webkit-border-radius 8px
+	&::-webkit-scrollbar-thumb
+		background rgb(102,153,204)
+		-webkit-box-shadow inset 0 0 4px rgba(0,0,0,.2)
+		-webkit-border-radius 8px
+	&::-webkit-scrollbar
+		height 5px
+		width 8px
+		background #f8f8f8
+		-webkit-box-shadow inset 0 0 3px rgba(0,0,0,.5)
+	&::-webkit-scrollbar-thumb
+		background #505050
+		border 1px solid #3E3E3E
+
+body
+	background white
+	// flex-direction column-reverse
+	height 100vh
+	scroll()
+	
+@import 'nib'
+@import 'header/style'
+@import 'fonts/style'
+@import 'themeBack/style'
+
+.body
+	text-align center
+	display flex
+	flex-direction row
+	position relative
+	
+.esconder
+	display none

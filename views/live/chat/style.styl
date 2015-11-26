@@ -1,5 +1,6 @@
 .Chat
 	display none
+	box-shadow: 0px 0px 6px #999
 	// height auto
 	
 @media screen and (min-width 767px)
@@ -12,10 +13,12 @@
 	// 	&__sendMessage
 	// 		margin 0			
 	.Chat
+		height 87vh
 		// flex-wrap wrap
 		// display inline-block
 		// align-items stretch
 		// display flex
+		// padding 0.4em 0
 		position fixed
 		top 70px
 		bottom 10px
@@ -26,6 +29,7 @@
 		// width 100%
 		width 38%
 		// max-height 55s0px
+		background-color white
 		&__box
 			// margin 0 .5em 
 			width  99%
@@ -33,28 +37,32 @@
 			margin-bottom .5em
 			text-align center
 			width 100%
-			background #CBF0FF
+			// background #CBF0FF
 			border-radius 5px
 			height 60px
+			margin 0.5em 0
 		// &__sendBox
 		// 	width 100%
 		// 	border-radius 5px
 		// 	padding 0.5em
 		// 	background #cbf0ff
-		    margin 0.5em 0
 		&__message
+			border 1px solid #CECECE
+			box-sizing border-box
+			padding .5em
 			height 50px
-			max-width 94%
-			width 94%
+			max-width 97%
+			width 97%
 			// padding 8px
 			vertical-align top
 			outline none
-			border none
+			// border none
 			max-height 50px
-			margin 5px 0
+			// margin 5px 0
 			font-size 14px
 			border-radius 5px
 		&__list
+			height 72vh
 			// flex-direction column-reverse
 			align-items stretch
 			flex-direction column
@@ -69,10 +77,16 @@
 			// margin .2em auto
 			scroll()
 		&__item
-			border-radius 5px
-			padding .5em
-			background #CBF0FF
-			margin-bottom .3em
+			background-color white
+			// border 1px solid #DEDEDE
+			border-bottom 1px solid #DEDEDE
+			width 95%
+			// border-radius 5px
+			// padding .5em
+			// background #CBF0FF
+			margin 0 auto .5em auto
+		&__content
+			margin .5em
 		&__title
 			width 100%
 			// padding .3em .5em

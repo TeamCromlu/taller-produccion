@@ -7,14 +7,14 @@ section.Chat
 			form(action="")
 				input.Chat__message(type="text",id="m",autocomplete="off", placeholder="Enviar notas...")
 				button#boton(style="display:none;") Send
-		ul.Chat__list#messages
 						h2(id="avatar" value="#{user.photo}")
 						h3(id="usuario" value="#{user.name}")
-				each message in messages
-					li(class="Chat__item", style="list-style:none;")
-						.Chat__title
-							figure.Chat__avatarUser
-								img(src="#{message.avat}", width="35px")
-							h3.Chat__nameUser #{message.user}
-						.Chat__coment
-							p.Chat__text #{message.mensaje}
+		ul.Chat__list#messages
+			each message in messages
+				li(class="Chat__item", style="list-style:none;")
+					.Chat__title
+						figure.Chat__avatarUser
+							img(src="#{message.avat}", width="35px")
+						h3.Chat__nameUser #{message.user}
+					.Chat__coment
+						p.Chat__text #{message.mensaje}

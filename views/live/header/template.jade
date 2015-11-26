@@ -1,7 +1,7 @@
 header.Header
 	.Header__box
 		.Header__title
-			a.header__home(href="#")
+			a.header__home(href="/cursos")
 				figure.Header__logo
 					img(src="../image/cromlu.png", alt='cromlu.com')
 				h1.Header__name Cromlu
@@ -12,7 +12,7 @@ header.Header
 			nav.Header__nav
 				ul.Header__list
 					li.Header__option
-						a.Header__link Mis cursos
+						a.Header__link(href="/cursos") Mis cursos
 					//- li.Header__option
 					//- 	a.Header__link Mis cursos
 			.Header__user
@@ -24,11 +24,13 @@ header.Header
 					.Header__iconDown.icon-down
 	ul.Header__listDesktop
 		li.Header__linkDesktop
-			div.icon-user2.Header__iconExit
-			a.Header__button(href="#") Mi Perfil
+			.Header__linkOption
+				div.icon-user2.Header__iconExit
+				a.Header__button(href="#") Mi Perfil
 		li.Header__linkDesktop
-			div.icon-exit.Header__iconExit
-			a.Header__button(href="/logout") Salir
+			.Header__linkOption
+				div.icon-exit.Header__iconExit
+				a.Header__button(href="/logout") Logout
 	.Header__userOption
 		ul.Header__userList
 			li.Header__optionMobile
@@ -36,4 +38,4 @@ header.Header
 			li.Header__optionMobile
 				a.Header__linkMobile(href="/cursos") Mis cursos
 			li.Header__optionMobile
-				a.Header__linkMobile(href="/logout") Salir
+				a.Header__linkMobile(href="/logout") Logout
