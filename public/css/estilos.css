@@ -31,6 +31,18 @@ body::-webkit-scrollbar-thumb {
 .esconder {
   display: none;
 }
+.ocultar {
+  display: none;
+}
+.rec a {
+  color: #da002c;
+  text-shadow: 0px 0px 5px #f39292;
+}
+.rec a:hover {
+  background-color: transparent;
+  color: #008400;
+  text-shadow: 0px 0px 5px #119e00;
+}
 .Header {
   position: fixed;
   height: 60px;
@@ -100,14 +112,21 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
 }
 .Header__link {
-  line-height: 60px;
-  height: 60px;
+  padding: 14px 10px;
   cursor: pointer;
-  margin-right: 10px;
   color: #00e2d4;
   font-size: 2rem;
   text-decoration: none;
   display: block;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+.Header__link:hover {
+  background-color: #01e6d5;
+  color: #fff;
 }
 .Header__nav {
   display: inline-block;
@@ -125,11 +144,11 @@ body::-webkit-scrollbar-thumb {
   list-style: none;
 }
 .Header__optionMobile {
-  border-bottom: 1px solid #808080;
+  border-bottom: 1px solid #01e6d5;
   text-align: center;
 }
 .Header__optionMobile:first-child {
-  border-top: 1px solid #808080;
+  border-top: 1px solid #01e6d5;
 }
 .Header__linkMobile {
   color: #000;
@@ -140,12 +159,22 @@ body::-webkit-scrollbar-thumb {
   padding: 20px 0;
   font-weight: bold;
   font-size: 1.5em;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+}
+.Header__linkMobile:hover {
+  background-color: #01e6d5;
+  color: #fff;
 }
 .Header__listDesktop {
   display: none;
 }
 @media screen and (min-width: 767px) {
   .Header {
+    min-height: 60px;
     height: 60px;
   }
   .Header__mainMobile {
@@ -181,6 +210,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-between;
   }
   .Header__listDesktop {
+    list-style: none;
     right: -100%;
     display: -webkit-box;
     display: -moz-box;
@@ -229,9 +259,28 @@ body::-webkit-scrollbar-thumb {
   .Header__link {
     font-size: 1.2rem;
     font-weight: bold;
+    padding: 0 0.5em;
+    height: 60px;
+    line-height: 60px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .Header__link:hover {
+    background-color: #01e6d5;
   }
   .Header__user {
     border-left: 1px solid #00e6d5;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .Header__user:hover {
+    border-left: 1px solid #01e6d5;
   }
   .Header__userDesktop {
     cursor: pointer;
@@ -249,6 +298,11 @@ body::-webkit-scrollbar-thumb {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
     -webkit-box-align: center;
     -moz-box-align: center;
     -o-box-align: center;
@@ -256,44 +310,47 @@ body::-webkit-scrollbar-thumb {
     -webkit-align-items: center;
     align-items: center;
   }
+  .Header__userDesktop:hover {
+    background-color: #01e6d5;
+  }
+  .Header__userDesktop:hover .Header__userName {
+    color: #fff;
+  }
   .Header__linkDesktop {
-    background: #00b383;
+    background: #00e2d4;
     cursor: pointer;
     height: 40px;
     width: 200px;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: box;
-    display: flex;
+    border-bottom: 1px solid rgba(0,137,144,0.58);
     color: #fff;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    -o-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-box-pack: flex-star;
-    -moz-box-pack: flex-star;
-    -o-box-pack: flex-star;
-    -ms-flex-pack: flex-star;
-    -webkit-justify-content: flex-star;
-    justify-content: flex-star;
+  }
+  .Header__linkDesktop:first-child {
+    border-top: 1px solid rgba(0,137,144,0.58);
+  }
+  .Header__linkDesktop:hover {
+    background-color: #007560;
   }
   .Header__button {
     font-size: 1.5rem;
     text-decoration: none;
     color: #fff;
+    display: inline-block;
+    line-height: 40px;
   }
   .Header__iconExit {
-    margin: 0.5em;
+    display: inline-block;
+    margin: 0 0.5em;
     font-size: 1.5em;
   }
   .Header__listLink {
     display: none;
   }
   .Header__userName {
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
     display: block;
     margin-left: 0.2em;
     font-weight: bold;
