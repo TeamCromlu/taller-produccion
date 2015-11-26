@@ -26,8 +26,11 @@ require('./models/messages');
 
 var llamada = require('./routes/admin');
 
-// Conexión a la base de datos de MongoDB que tenemos en local
-mongoose.connect('mongodb://localhost:27017/passport-example', function(err, res) {
+// Conexión a la base de datos de MongoDB que tenemos en 
+//mongodb://cromlu:cromlu1221@ds059654.mongolab.com:59654/heroku_cwms79w3
+MONGOLAB_URI='mongodb://cromlu:cromlu1221@ds059654.mongolab.com:59654/heroku_cwms79w3'
+//MOGNODB_LOCAL = 'mongodb://localhost:27017/passport-example'
+mongoose.connect('MONGOLAB_URI', function(err, res) {
   if(err) throw err;
   console.log('Conectado con éxito a la BD');
 });
@@ -160,7 +163,47 @@ app.get('/cursos/frontend', function (req, res){
     title: 'Taller de Frontend',
     user: req.user
 	});
+}); 
+
+// Render clases de Frontend
+app.get('/cursos/frontend/clase1', function (req, res){
+  res.render("./frontend/clase1/index", {
+    title: 'Taller de Frontend',
+    user: req.user
+  });
 });
+app.get('/cursos/frontend/clase2', function (req, res){
+  res.render("./frontend/clase2/index", {
+    title: 'Taller de Frontend',
+    user: req.user
+  });
+});
+app.get('/cursos/frontend/clase3', function (req, res){
+  res.render("./frontend/clase3/index", {
+    title: 'Taller de Frontend',
+    user: req.user
+  });
+});
+app.get('/cursos/frontend/clase4', function (req, res){
+  res.render("./frontend/clase4/index", {
+    title: 'Taller de Frontend',
+    user: req.user
+  });
+});
+app.get('/cursos/frontend/clase5', function (req, res){
+  res.render("./frontend/clase5/index", {
+    title: 'Taller de Frontend',
+    user: req.user
+  });
+});
+app.get('/cursos/frontend/clase6', function (req, res){
+  res.render("./frontend/clase6/index", {
+    title: 'Taller de Frontend',
+    user: req.user
+  });
+});
+
+
 
 app.get('/cursos/backend', function (req, res){
 	res.render("./backend/index", {
@@ -169,11 +212,87 @@ app.get('/cursos/backend', function (req, res){
 	});
 });
 
+// Render clases de Backend
+app.get('/cursos/backend/clase1', function (req, res){
+  res.render("./backend/clase1/index", {
+    title: 'Taller de Backend',
+    user: req.user
+  });
+});
+app.get('/cursos/backend/clase2', function (req, res){
+  res.render("./backend/clase2/index", {
+    title: 'Taller de Backend',
+    user: req.user
+  });
+});
+app.get('/cursos/backend/clase3', function (req, res){
+  res.render("./backend/clase3/index", {
+    title: 'Taller de Backend',
+    user: req.user
+  });
+});
+app.get('/cursos/backend/clase4', function (req, res){
+  res.render("./backend/clase4/index", {
+    title: 'Taller de Backend',
+    user: req.user
+  });
+});
+app.get('/cursos/backend/clase5', function (req, res){
+  res.render("./backend/clase5/index", {
+    title: 'Taller de Backend',
+    user: req.user
+  });
+});
+app.get('/cursos/backend/clase6', function (req, res){
+  res.render("./backend/clase6/index", {
+    title: 'Taller de Backend',
+    user: req.user
+  });
+});
+
+
 app.get('/cursos/git', function (req, res){
 	res.render("./git/index", {
     title: 'Taller de Git',
     user: req.user
 	});
+});
+// cursos git
+app.get('/cursos/git/clase1', function (req, res){
+  res.render("./git/clase1/index", {
+    title: 'Taller de Git',
+    user: req.user
+  });
+});
+app.get('/cursos/git/clase2', function (req, res){
+  res.render("./git/clase2/index", {
+    title: 'Taller de Git',
+    user: req.user
+  });
+});
+app.get('/cursos/git/clase3', function (req, res){
+  res.render("./git/clase3/index", {
+    title: 'Taller de Git',
+    user: req.user
+  });
+});
+app.get('/cursos/git/clase4', function (req, res){
+  res.render("./git/clase4/index", {
+    title: 'Taller de Git',
+    user: req.user
+  });
+});
+app.get('/cursos/git/clase5', function (req, res){
+  res.render("./git/clase5/index", {
+    title: 'Taller de Git',
+    user: req.user
+  });
+});
+app.get('/cursos/git/clase6', function (req, res){
+  res.render("./git/clase6/index", {
+    title: 'Taller de Git',
+    user: req.user
+  });
 });
 
 app.get('/live', function (req, res){
