@@ -1,3 +1,5 @@
+var express = require('express');
+var passport = require('passport');
 var mongoose = require('mongoose');
 var User = mongoose.model('User');
 // Estrategia de autenticación con Twitter
@@ -13,7 +15,7 @@ var config = require('./config');
 // podamos utilizarlas en otras partes de la aplicación.
 // De esta manera, mantenemos el código separado en varios archivos
 // logrando que sea más manejable.
-module.exports = function(passport) {
+var logear = function(passport) {
 
 	// Serializa al usuario para almacenarlo en la sesión
 	passport.serializeUser(function(user, done) {
@@ -93,3 +95,5 @@ module.exports = function(passport) {
 	}));
 
 };
+
+module.exports = logear;

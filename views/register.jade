@@ -23,14 +23,6 @@ html(lang='es')
             h1 Cromlu
     section.Networking 
      .Networking__box
-       h2 Bienvenido #{usuario} :) , Escoge una opción para entrar a tus clases
+       h2 Bienvenido #{usuario} :) #{serial}, Escoge una opción para entrar a tus clases
        a(href="auth/facebook", class="color-facebook") Facebook
        a(href="auth/twitter", class="color-twitter") Twitter
-     //- .admin
-     //-    h1 ¿Tienes un acceso por usuario y contraseña?
-     //-    form(action="/cursos", method="post")
-     //-      label Tu nombre 
-     //-      input(type="text", name="usuario")
-     //-      label Tu contraseña
-     //-      input(type="password", name="clave")
-     //-      input(type="submit", name="enviar")

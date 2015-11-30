@@ -1,9 +1,7 @@
 var express = require('express');
 var passport = require('passport');
-// var register(passport);
 var mongoose = require('mongoose');
 var User = mongoose.model('User');
-var passport = require('passport');
 // var passport_register = require('passport');
 // Estrategia de autenticación con Twitter
 var TwitterStrategy = require('passport-twitter').Strategy;
@@ -18,8 +16,6 @@ var config = require('./config');
 // podamos utilizarlas en otras partes de la aplicación.
 // De esta manera, mantenemos el código separado en varios archivos
 // logrando que sea más manejable.
-// var router = express();
-// var register = express();
 var register = function (passport) {
 	// Serializa al usuario para almacenarlo en la sesión
 	passport.serializeUser(function(user, done) {

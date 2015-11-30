@@ -12,7 +12,6 @@ var routes = require('./routes'); // Dónde tenemos la configuración de las rut
 var path = require('path');
 var parsero = require('body-parser');
 var mongoose = require('mongoose'); // Mongoose: Libreria para conectar con MongoDB
-// var User = mongoose.model('User');
 var User = require('./models/user').User;
 var Msg = require('./models/messages').Msg;
 var passport = require('passport'); // Passport: Middleware de Node que facilita la autenticación de usuarios
@@ -77,32 +76,51 @@ app.get('/cursos', routes.index);
 app.get('/login', function (req, res){
   function login(){
   var passport = require('passport');
-  var register = require('./passport');
-  register(passport);
+  var login_now = require('./passport');
+  login_now(passport);
   }
-  login();
   res.render("login");
+  login();
 });
 
 app.get('/login-again', function (req, res){
   function login_again(){
   var passport = require('passport');
-  var register = require('./passport');
-  register(passport);
+  var login_now = require('./passport');
+  login_now(passport);
   }
-  login_again();
   res.render("login-again");
+  login_again();
 });
 
-app.get('/register_new_user_token5985555213BMDX', function (req, res){
+app.get('/register_new_user_token5985555213BMDXM', function (req, res){
+
+  res.render('register_serial');
+});
+
+app.post('/register_new_user_token5985555213BMDX', function (req, res){
   // http://localhost:5000/register_new_user_token5985555213BMDX?usuario=joel&serial=45bMFFGS44FDZ12
+
   function registro(){
-    var passport_register = require('passport');
-    var register = require('./passport-register');
-    register(passport_register);
+    this.llama = function(){
+      var passport_register = require('passport');
+      var register = require('./passport-register.js');
+      register(passport_register);
+    }
+    // return llama
   }
-  registro();
-  res.render("register", { usuario : req.query.usuario });
+    // registro();
+    var holaa = new registro();
+    holaa.llama();
+
+    res.render("register", { 
+    usuario : req.body.usuario
+    // serial  : req.query.serial
+    });
+
+    // var login = require('./passport');
+    // login(passport);
+
 });
 
 app.get('/ingresar-admin', function (req, res){
@@ -118,7 +136,7 @@ app.post('/admin/panel', function  (req, res){
     if(admin.usuario == data_admin.user && admin.clave  == data_admin.pass){
 
       // res.render('panel',{master: admin.usuario} );
-      console.log('El usuario se logeo correctamente, usuario: ' + admin.usuario  + ' clave: ' + admin  .clave  );
+      // console.log('El usuario se logeo correctamente, usuario: ' + admin.usuario  + ' clave: ' + admin  .clave  );
 
       // app.post('/admin/usuarios/', function (req, res) {
           User.find(function (err, users) {
@@ -291,38 +309,29 @@ app.get('/cursos/git/clase6', function (req, res){
   });
 });
 
+
 app.get('/live', function (req, res){
-  Msg.find(function (err, messages) {
 
-            if(err) res.send(500, err.message);
-            var data = [];
-            var hola = [];
+              Msg.find(function (err, messages) {
 
-                // messages.forEach( function (msg){
-                // console.log(parse_msg)
-                  // for (var i =0; i<= 10; i++){
-                    var limite = messages.length -1;
-                    for(var i = limite; i >= 0 ; i--){
-                      // console.log(messages[i].msg);
-                      var parse_msg = messages[i].msg;
-                      data[limite - i] = JSON.parse(parse_msg);
-                      console.log(data[limite - i])
-                    // }
-                  }
-                // return data;
-              // });
+                        if(err) res.send(500, err.message);
+                        var data = [];
 
-              
-            console.log('GET/messages')
-            console.log(data);
+                                var limite = messages.length -1;
+                                for(var i = limite; i >= 0 ; i--){
+                                  var parse_msg = messages[i].msg;
+                                  data[limite - i] = JSON.parse(parse_msg);
+                              }
 
-              // res.status(200).jsonp(messages);
-            return res.render("./live/index", {
-                title: 'En vivo',
-                user: req.user,
-                messages : data
-            });
-    });
+                        console.log('GET/messages')
+
+                        return res.render("./live/index", {
+                            title: 'En vivo',
+                            user: req.user,
+                            messages : data
+                        });
+                });
+
 });
 
 
@@ -357,14 +366,13 @@ io.on('connection', function (socket){
         if(err) res.send(500, err.message);
         // Volviendo a cadena el dato de mensaje recibido para la base de datos
           var send_msg = msg;
-          console.log(send_msg);
+          // console.log(send_msg);
           var data = JSON.stringify(send_msg);
-          console.log(data);
+          // console.log(data);
           // creando el schema del mensaje
           var messages = new Msg({
            name        : "usuario",
            msg         :  data
-           // photo       : profile.photos[0].value
           });
           //almacenandolo 
           messages.save(function(err) {
