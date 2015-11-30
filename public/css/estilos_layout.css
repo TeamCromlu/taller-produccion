@@ -312,7 +312,7 @@ body {
 }
 .Conviction {
   height: 750px;
-  whith: 100%;
+  width: 100%;
   background: url("../image/convence.jpg");
   background-color: #bc9351;
   background-size: cover;
