@@ -215,7 +215,7 @@ body {
   }
 }
 .Conviction {
-  height: 750px;
+  height: auto;
   whith: 100%;
   background: url("../image/convence.jpg");
   background-color: #bc9351;
@@ -230,31 +230,121 @@ body {
 }
 .Conviction__box h2 {
   text-shadow: 1px 1px 2px #282828;
-  font-size: 2.5em;
+  font-size: 2em;
   color: #fff;
 }
-.Conviction .video-content {
+.Conviction__teach {
+  width: 100%;
+  height: auto;
+}
+.Conviction__teach .video-content {
   height: 0;
   padding-bottom: 56.25%;
   position: relative;
   overflow: hidden;
 }
-.Conviction iframe,
-.Conviction object,
-.Conviction embed,
-.Conviction video {
+.Conviction__teach iframe,
+.Conviction__teach object,
+.Conviction__teach embed,
+.Conviction__teach video {
   width: 100%;
   height: 100%;
   position: absolute;
   right: 0;
   left: 0;
 }
+.Conviction__teach .teach__beneficios {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.Conviction__teach .teach__beneficios--box {
+  text-align: center;
+  padding: 0.7em;
+}
+.Conviction__teach .teach__beneficios--icon {
+  display: block;
+  vertical-align: middle;
+  padding: 0.7em;
+  font-size: 3em;
+}
+.Conviction__teach .teach__beneficios--texto {
+  text-align: center;
+  display: block;
+  vertical-align: middle;
+}
 @media screen and (min-width: 764px) {
+  .Conviction {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
   .Conviction__box {
-    width: 70%;
+    width: 60%;
+    padding: 1em 0;
   }
   .Conviction__box h2 {
     font-size: 3em;
+  }
+  .Conviction__teach {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  .Conviction__teach .teach__video {
+    width: 61%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .Conviction__teach .teach__beneficios {
+    width: 30%;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    padding-bottom: 3.5em;
+    margin-top: -2em;
+  }
+  .Conviction__teach .teach__beneficios--box {
+    text-align: left;
+    width: 100%;
+    padding: 0;
+  }
+  .Conviction__teach .teach__beneficios--icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 2%;
+  }
+  .Conviction__teach .teach__beneficios--texto {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Conviction {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+  .Conviction__box {
+    width: 60%;
+    padding: 1em 0;
+  }
+  .Conviction__box h2 {
+    font-size: 3em;
+  }
+  .Conviction__teach {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  .Conviction__teach .teach__video {
+    width: 600px;
+    height: 400px;
+  }
+  .Conviction__teach .teach__beneficios {
+    width: 30%;
   }
 }
 .Benefit {
@@ -326,13 +416,13 @@ body {
   }
 }
 .Convince {
-  height: 300px;
+  height: auto;
   background: url("../image/pexel.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .Convince__box {
-  padding: 5em 0;
+  padding: 3em 0;
   margin: auto;
   text-align: center;
   width: 90%;
@@ -344,13 +434,13 @@ body {
 }
 @media screen and (min-width: 764px) {
   .Convince {
-    height: 300px;
+    height: auto;
   }
   .Convince__box {
-    padding: 7em 0;
+    padding: 5em 0;
   }
   .Convince__box h2 {
-    font-size: 4em;
+    font-size: 3.5em;
   }
 }
 .confianza {

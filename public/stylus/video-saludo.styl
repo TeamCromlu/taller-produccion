@@ -1,5 +1,5 @@
 .Conviction
-	height 750px
+	height auto
 	whith 100%
 	background url('../image/convence.jpg')
 	background-color #BC9351 
@@ -12,27 +12,114 @@
 		padding 3em 0
 		h2
 			text-shadow 1px 1px 2px #282828
-			font-size 2.5em
+			font-size 2em
 			color white
 			
-	.video-content
-		height 0
-		padding-bottom 56.25%
-		position relative
-		overflow hidden
-	iframe,
-	object,
-	embed,
-	video
+	&__teach
 		width 100%
-		height 100%
-		position absolute
-		right 0
-		left 0
+		height auto
+		
+		.video-content
+			height 0
+			padding-bottom 56.25%
+			position relative
+			overflow hidden
+		iframe,
+		object,
+		embed,
+		video
+			width 100%
+			height 100%
+			position absolute
+			right 0
+			left 0
+			
+		.teach__beneficios
+			text-align center
+			margin 0 auto
+			padding-top 2em
+			padding-bottom 2em
+			
+			&--box
+				text-align center
+				padding .7em
+				
+			&--icon
+				display block
+				vertical-align middle
+				padding .7em
+				font-size 3em
+				
+			&--texto
+				text-align center
+				display block
+				vertical-align middle
+				
 
 @media screen and (min-width 764px)
 	.Conviction
+		padding-top	3em
+		padding-bottom	3em
 		&__box
-			width 70%
+			width 60%
+			padding	1em 0
 			h2
 				font-size 3em
+				
+		&__teach
+			text-align	center
+			margin	0 auto
+			padding-top	2em
+			padding-bottom	2em
+			.teach__video
+				width 61%
+				display inline-block
+				vertical-align middle
+
+			.teach__beneficios
+				width 30%
+				text-align left
+				display inline-block
+				vertical-align top
+				padding-bottom 3.5em
+				margin-top -2em
+				
+				&--box
+					text-align left
+					width 100%
+					padding	 0
+					
+				&--icon
+					display inline-block
+					vertical-align middle
+					width 2%
+					
+				&--texto
+					display inline-block
+					vertical-align middle
+					width 60%
+					
+
+
+
+@media screen and (min-width 1200px)
+	.Conviction
+		padding-top	3em
+		padding-bottom	3em
+		&__box
+			width 60%
+			padding	1em 0
+			h2
+				font-size 3em
+				
+		&__teach
+			text-align	center
+			margin	0 auto
+			padding-top	2em
+			padding-bottom	2em
+			.teach__video
+				width 600px
+				height 400px	
+
+			.teach__beneficios
+				width 30%
