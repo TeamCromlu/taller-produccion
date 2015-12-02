@@ -154,7 +154,7 @@ body {
 }
 .Front {
   padding: 7em 0;
-  background: url("../image/portada.jpg");
+  background: url("../image/2.jpg");
   background-color: #e0ac65;
   background-size: cover;
   background-repeat: no-repeat;
@@ -214,10 +214,44 @@ body {
     display: initial;
   }
 }
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts-video/icomoon.eot?ploybc");
+  src: url("../fonts-video/icomoon.eot?ploybc#iefix") format('embedded-opentype'), url("../fonts-video/icomoon.ttf?ploybc") format('truetype'), url("../fonts-video/icomoon.woff?ploybc") format('woff'), url("../fonts-video/icomoon.svg?ploybc#icomoon") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-window:before {
+  content: "\e900";
+}
+.icon-terminal:before {
+  content: "\f0c8";
+}
+.icon-feed:before {
+  content: "\e901";
+}
+.icon-mic:before {
+  content: "\e902";
+}
+.icon-play:before {
+  content: "\e903";
+}
 .Conviction {
   height: auto;
   whith: 100%;
-  background: url("../image/convence.jpg");
+  background: url("../image/6.jpg");
   background-color: #bc9351;
   background-size: cover;
   background-repeat: no-repeat;
@@ -264,12 +298,16 @@ body {
   padding: 0.7em;
 }
 .Conviction__teach .teach__beneficios--icon {
+  color: #fff;
+  text-decoration: none;
   display: block;
   vertical-align: middle;
   padding: 0.7em;
   font-size: 3em;
 }
 .Conviction__teach .teach__beneficios--texto {
+  margin-left: 0.5em;
+  color: #fff;
   text-align: center;
   display: block;
   vertical-align: middle;
@@ -281,7 +319,6 @@ body {
     padding-bottom: 3em;
   }
   .Conviction__box {
-    width: 60%;
     padding: 1em 0;
   }
   .Conviction__box h2 {
@@ -329,7 +366,6 @@ body {
     padding-bottom: 3em;
   }
   .Conviction__box {
-    width: 60%;
     padding: 1em 0;
   }
   .Conviction__box h2 {
@@ -381,6 +417,21 @@ body {
 }
 .Benefit__cajas p {
   color: #585858;
+  padding-bottom: 2em;
+}
+.Benefit__cajas a {
+  padding: 0.5em;
+  background-color: #ffd400;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 4px solid #c79d00;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.Benefit__cajas a:hover {
+  background-color: #fff000;
+  border-bottom: 4px solid #ffd200;
 }
 .Benefit__cajas figure img {
   width: 200px;
@@ -423,7 +474,7 @@ body {
 }
 .Convince {
   height: auto;
-  background: url("../image/pexel.jpg");
+  background: url("../image/4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
