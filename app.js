@@ -334,7 +334,9 @@ app.get('/live', function (req, res){
 
 });
 
-
+app.get('/comprar-send-ok', function (req, res){
+    res.render('send_ok-comprar');
+});
 /* Rutas de Passport */
 // Ruta para desloguearse
 app.get('/logout', function(req, res) {
