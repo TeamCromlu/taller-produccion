@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Open+Sans', 'Arial', sans-serif;
+}
+.Header {
+  -webkit-box-shadow: 0px 4px 3px rgba(0,0,0,0.24);
+  box-shadow: 0px 4px 3px rgba(0,0,0,0.24);
+  position: fixed;
+  width: 100%;
+  z-index: 9000;
+}
+.Header__mobile {
+  white: 100%;
+  display: block;
+  background: #fff;
+}
+.Header__logo {
+  display: inline-block;
+  padding: 0.5em;
+}
+.Header__logo a {
+  color: color__gris;
+  text-decoration: none;
+}
+.Header__logo img {
+  display: inline-block;
+  width: 50px;
+}
+.Header__logo h1 {
+  padding: 0.4em 0;
+  vertical-align: top;
+  display: inline-block;
+  font-size: 1.5em;
+  color: #3a3a3a;
+}
+.Header__icon-menu {
+  cursor: pointer;
+  padding: 1.4em 0.5em;
+  float: right;
+  display: inline-block;
+}
+.Header__icon-menu a {
+  font-size: 1.3em;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.4em;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #01e6d5;
+}
+.Header__desktop {
+  background: #fff;
+}
+.Header__logo2 {
+  padding-top: 0.3em;
+  padding-left: 0.5em;
+  display: none;
+}
+.Header__logo2 a {
+  color: color__gris;
+  text-decoration: none;
+}
+.Header__logo2 img {
+  display: inline-block;
+  width: 50px;
+}
+.Header__logo2 h1 {
+  padding: 0.4em 0;
+  vertical-align: top;
+  display: inline-block;
+  font-size: 1.5em;
+  color: #3a3a3a;
+}
+.Header__nav {
+  position: fixed;
+  left: -100%;
+  height: auto;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+}
+.Header__list:first-child {
+  border-top: 1px solid #01e6d5;
+}
+.Header__botones {
+  display: block;
+  border-bottom: 1px solid #01e6d5;
+}
+.Header__botones a {
+  font-size: 1.2em;
+  padding: 1em 0.5em;
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
+  color: #808080;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+}
+.Header__botones :hover {
+  color: #fff;
+  background-color: #01e6d5;
+}
+@media screen and (min-width: 764px) {
+  .Header__mobile {
+    display: none;
+  }
+  .Header__logo2 {
+    margin-left: 1em;
+    float: left;
+    display: inline-block;
+  }
+  .Header__nav {
+    height: auto;
+    position: initial;
+  }
+  .Header__list {
+    padding-right: 1.5em;
+    text-align: right;
+  }
+  .Header__list:first-child {
+    border-top: none;
+  }
+  .Header__botones {
+    text-align: center;
+    display: inline-block;
+    border-bottom: none;
+  }
+  .Header__botones:last-child {
+    margin-left: 1em;
+  }
+  .Header__botones:last-child a {
+    max-width: 163px;
+    margin: auto;
+    color: #00e6d5;
+    padding: 0.5em 1em;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    border: 1px solid #00e6d5;
+  }
+  .Header__botones:last-child a:hover {
+    background-color: #01e6d5;
+    color: #fff;
+    border: 1px solid #01e6d5;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .Header__botones a {
+    padding: 1em 1em;
+  }
+  .Header__botones:last-child {
+    margin: left 2em;
+  }
+}
