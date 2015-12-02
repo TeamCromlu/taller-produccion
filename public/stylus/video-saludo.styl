@@ -1,7 +1,50 @@
+@font-face
+  font-family 'icomoon'
+  src url('../fonts-video/icomoon.eot?ploybc')
+  src url('../fonts-video/icomoon.eot?ploybc#iefix') format('embedded-opentype'),
+  url('../fonts-video/icomoon.ttf?ploybc') format('truetype'),
+  url('../fonts-video/icomoon.woff?ploybc') format('woff'),
+  url('../fonts-video/icomoon.svg?ploybc#icomoon') format('svg')
+  font-weight normal
+  font-style normal
+
+[class^="icon-"], [class*=" icon-"]
+  font-family 'icomoon' !important
+  speak none
+  font-style normal
+  font-weight normal
+  font-variant normal
+  text-transform none
+  line-height 1
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+
+.icon-window
+  &:before
+    content "\e900"
+
+.icon-terminal
+  &:before
+    content "\f0c8"
+
+.icon-feed
+  &:before
+    content "\e901"
+
+.icon-mic
+  &:before
+    content "\e902"
+
+.icon-play
+  &:before
+    content "\e903"
+
+
+
 .Conviction
 	height auto
 	whith 100%
-	background url('../image/convence.jpg')
+	background url('../image/6.jpg')
 	background-color #BC9351 
 	background-size cover
 	background-repeat no-repeat
@@ -45,12 +88,16 @@
 				padding .7em
 				
 			&--icon
+				color white
+				text-decoration none
 				display block
 				vertical-align middle
 				padding .7em
 				font-size 3em
 				
 			&--texto
+				margin-left .5em
+				color white
 				text-align center
 				display block
 				vertical-align middle
@@ -62,7 +109,7 @@
 		padding-top	3em
 		padding-bottom	3em
 		&__box
-			width 60%
+			// width 60%
 			padding	1em 0
 			h2
 				font-size 3em
@@ -109,7 +156,7 @@
 		padding-top	3em
 		padding-bottom	3em
 		&__box
-			width 60%
+			// width 60%
 			padding	1em 0
 			h2
 				font-size 3em
