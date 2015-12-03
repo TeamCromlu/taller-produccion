@@ -1,6 +1,6 @@
 var anioFinal = 2015 //Variables de finalizacion
 var mesFinal = 12
-var diaFinal = 14
+var diaFinal = 15
 
 mesFinal -= 1
 function faltan()
@@ -12,7 +12,7 @@ diferenciaSegundos = diferencia /1000
 diferenciaMinutos = diferenciaSegundos/60
 diferenciaHoras = diferenciaMinutos/60
 diferenciaDias = diferenciaHoras/24
-diferenciaHoras2 = parseInt(diferenciaHoras) - (parseInt(diferenciaDias) *24)
+diferenciaHoras2 = parseInt(diferenciaHoras -8) - (parseInt(diferenciaDias) *24)
 diferenciaMinutos2 = parseInt(diferenciaMinutos) - (parseInt(diferenciaHoras) * 60)
 diferenciaSegundos2 = parseInt(diferenciaSegundos) - (parseInt(diferenciaMinutos) * 60)
 diferenciaDias = parseInt(diferenciaDias)
