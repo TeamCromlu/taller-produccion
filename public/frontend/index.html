@@ -10,15 +10,16 @@
     <!-- Favicom-->
     <link rel="icon" type="image/png" href="image/cromlu.ico">
     <!-- link de estilos-->
-	<link rel="stylesheet" href="css/estilo-frontend.css">
+  <link rel="stylesheet" href="css/estilo-frontend.css">
     <!-- Vista para facebook-->
     <meta property="og:title" content="Aprende desarrollo web para proyectos reales">
     <meta property="og:description" content="Clases en vivo, domina las bases del frontend, backend, git/github de forma efectiva @TeamCromlu">
     <meta property="og:image" content="http://cursos.cromlu.com/parafacebook.png">
     <meta property="og:url" content="http://cursos.cromlu.com">
+    <script src="contador.js"></script>
   </head>
   <body>
-    <header class="Header">
+    <!-- <header class="Header">
       <div class="Header__box">
         <div class="Header__mobile">
           <div class="Header__logo"><a href="#" class="Header__home"><img src="image/cromlu.png" alt="cromlu">
@@ -29,16 +30,147 @@
           <div class="Header__logo2"><a href="#" class="Header__home"><img src="image/cromlu.png" alt="cromlu">
               <h1> Cromlu </h1></a></div>
           <nav class="Header__nav">
-            <ul class="Header__list">
-              <!-- <li class="Header__botones"><a href="#video">Como aprender</a></li> -->
-              <li class="Header__botones"><a href="#cursos">cursos</a></li>
+            <ul class="Header__list"> -->
+             <!--<li class="Header__botones"><a href="#video">Como aprender</a></li -->
+              <!-- <li class="Header__botones"><a href="#cursos">cursos</a></li>
               <li class="Header__botones"><a href="/login">Ingresar</a></li>
             </ul>
           </nav>
         </div>
       </div>
-    </header>
-    
+    </header> -->
+
+    <section class="Temary">
+      <div class="Temary__box">
+        <div class="Temary__content">
+          <div class="Temary__list">
+            <h2 class="Temary__list--title">
+              Temario
+            </h2>
+            <div class="Temary__listContent">
+              <ul class="Temary__listContent--list">
+                <li class="Temary__listContent--content">
+                  <div class="Temary__listContent--icon icon-check_circle"></div>
+                  <p class="Temary__listContent--text">En este curso aprenderas html5</p>
+                </li>
+                <li class="Temary__listContent--content">
+                  <div class="Temary__listContent--icon icon-check_circle"></div>
+                  <p class="Temary__listContent--text">En este curso aprenderas css3</p>
+                </li>
+                <li class="Temary__listContent--content">
+                  <div class="Temary__listContent--icon icon-check_circle"></div>
+                  <p class="Temary__listContent--text">En este curso aprenderas javascript</p>
+                </li>
+                <li class="Temary__listContent--content">
+                  <div class="Temary__listContent--icon icon-check_circle"></div>
+                  <p class="Temary__listContent--text">En este curso aprenderas responsive Design</p>
+                </li>
+                <li class="Temary__listContent--content">
+                  <div class="Temary__listContent--icon icon-check_circle"></div>
+                  <p class="Temary__listContent--text">En este curso aprenderas API</p>
+                </li>
+                <li class="Temary__listContent--content">
+                  <div class="Temary__listContent--icon icon-check_circle"></div>
+                  <p class="Temary__listContent--text">En este curso aprenderas html5</p>
+                </li>
+                <li class="Temary__listContent--content">
+                  <div class="Temary__listContent--icon icon-check_circle"></div>
+                  <p class="Temary__listContent--text">En este curso aprenderas html5</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="Temary__workshop">
+          <div class="Temary__workshop--box">
+            <h2 class="Temary__workshop--title">
+              Taller de Frontend
+            </h2>
+            <figure class="Temary__workshop--logo">
+              <img src="./image/frontend.png" alt="" class="Temary__workshop--image">
+            </figure>
+            <div class="Temary__workshop--button">
+              <a href="../login" class="Temary__workshop--actionButton">Entrar al taller</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Workshop">
+      <div class="Workshop__box">
+        <h2 class="Workshop__title">
+          ¿Cómo son los talleres?
+        </h2>
+        <div class="Workshop__content">
+          <article class="Workshop__contentBox">
+            <div class="Workshop__contentIcons">
+              <div class="Workshop__contentIcons--live icon-feed"></div>
+              <div class="Workshop__contentIcons--micro icon-mic"></div>
+            </div>
+            <div class="Workshop__contentTitle">
+              <h3 class="Workshop__contentTitle--title">
+                Clases en vivo
+              </h3>
+            </div>
+            <div class="Workshop__contentText">
+              <p class="Workshop__contentText--text">
+                Los talleres son online, en vivo, interactua con el profesor y copañeros en tiempo real.
+              </p>
+            </div>
+          </article>
+          <article class="Workshop__contentBox">
+            <div class="Workshop__contentIcons">
+              <div class="Workshop__contentIcons--live icon-video"></div>
+              <!-- <div class="Workshop__contentIcons--micro icon-mic"></div> -->
+            </div>
+            <div class="Workshop__contentTitle">
+              <h3 class="Workshop__contentTitle--title">
+                Repasa cuando quieras
+              </h3>
+            </div>
+            <div class="Workshop__contentText">
+              <p class="Workshop__contentText--text">
+                Todo queda grabado, para que repases cuando gustes o por si te lo perdiste.
+              </p>
+            </div>
+          </article>
+          <article class="Workshop__contentBox">
+            <div class="Workshop__contentIcons">
+              <div class="Workshop__contentIcons--live icon-group"></div>
+              <!-- <div class="Workshop__contentIcons--micro icon-mic"></div> -->
+            </div>
+            <div class="Workshop__contentTitle">
+              <h3 class="Workshop__contentTitle--title">
+                Interactua en tiempo real
+              </h3>
+            </div>
+            <div class="Workshop__contentText">
+              <p class="Workshop__contentText--text">
+                Conoce a tus profesores y copañeros en tiempo real. Pregunta lo que quieras y ten respuestas exclusivas.
+              </p>
+            </div>
+          </article>
+          <article class="Workshop__contentBox">
+            <div class="Workshop__contentIcons">
+              <div class="Workshop__contentIcons--live icon-notebook"></div>
+              <div class="Workshop__contentIcons--micro icon-ondemand_video"></div>
+            </div>
+            <div class="Workshop__contentTitle">
+              <h3 class="Workshop__contentTitle--title">
+                Materiales y videos bonus
+              </h3>
+            </div>
+            <div class="Workshop__contentText">
+              <p class="Workshop__contentText--text">
+                Tendras acceso a videos, guias y materiales exclusivos para tu formación.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <p id="tiempo"></p>
+    <script>faltan()</script>
     <footer class="Footer-Main">
       <div class="Footer-Main__box">
         <p>©Copyright 2015 <a href="https://twitter.com/TeamCromlu" target="_blank">@TeamCromlu</a></p>
