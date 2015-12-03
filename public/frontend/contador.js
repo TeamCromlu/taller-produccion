@@ -37,6 +37,6 @@ document.getElementById('day').innerHTML = diferenciaDias;
 document.getElementById('hour').innerHTML = diferenciaHoras2;
 document.getElementById('min').innerHTML = diferenciaMinutos2;
 document.getElementById('sec').innerHTML = diferenciaSegundos2;
-setTimeout('faltan()',1000)
+setTimeout('faltan()',1000);
 }
 }
