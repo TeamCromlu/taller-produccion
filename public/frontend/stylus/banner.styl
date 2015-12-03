@@ -1,8 +1,10 @@
 .Banner
 	background-color #02607C
 	background-image url('../image/banner.jpg')
+	background-size cover
+	background-repeat no-repeat
 	width 100%
-	padding 1em
+	padding 3em 0
 	box-sizing border-box
 	&__box
 		width 90%
@@ -18,28 +20,36 @@
 		.Day--box-time
 			// background skyblue
 			display block
-			margin 1em
-			padding 1em
+			margin 0 auto
+			// padding 1em
 			vertical-align middle			
+			p
+				text-align center
+				font-size 1em
+				font-weight bold
+				color white
 			.box--time__top
+				text-align center
 				// background peru
-				display block
+				// display block
 				padding .5em
 				.top-time
 					// background orange
 					display inline-block
 					padding .1em
 					background #F9F6F6
-					padding .5em
+					// padding .5em
 					margin .2em
-					border-radius 10px
+					border-radius 8px
 					
 					h2
 						display inline-block
-						font-size 2em
+						font-size 1.5em
 					label
 						display block
 				p
+					font-size 1.4em
+					color white
 					display inline-block
 					vertical-align top
 					padding-top .2em
@@ -51,11 +61,15 @@
 	&__logo
 		width 90%
 		margin 2em auto 1em auto
+		text-align center
 		&--image
-			width 200px
+			max-width 150px
+			width 100%
 			border-radius 50%
 	&__button
-		// width 50%
+		width 80%
+		max-width 200px
+		cursor pointer
 		margin 2em auto
 		padding .5em
 		border-radius 5px 
@@ -72,5 +86,30 @@
 		&:hover
 			background-color #00E852
 			border-bottom 4px solid #00B845
+			a
+				text-decoration underline
 	
-			
+@media screen and (min-width 767px)
+	.Banner
+		padding 1em 0
+		&__box
+			max-width 800px
+			width 100%
+		&__content
+			display flex
+			flex-direction row
+			align-items center
+			.Day--box-time
+				width 33%
+				// vertical-align top
+				// display inline-block
+		&__logo
+			width 33%
+			// vertical-align top
+			// display inline-block
+		&__button
+			height 28px
+			// margin 80px 0
+			width 33%
+			// display inline-block
+			// vertical-align top
