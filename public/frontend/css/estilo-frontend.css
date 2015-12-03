@@ -249,7 +249,7 @@ body {
   }
   .Cover-Main__Curso .Curso--copy {
     display: inline-block;
-    width: 50%;
+    width: 69%;
     text-align: left;
     vertical-align: middle;
   }
@@ -272,20 +272,37 @@ body {
     margin: 0 auto;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 927px) {
   .Cover-Main {
     text-align: center;
     margin: 0 auto;
   }
   .Cover-Main__Curso {
     display: inline-block;
-    width: 52%;
+    width: 474px;
     vertical-align: middle;
   }
   .Cover-Main__Video {
     display: inline-block;
-    width: 30%;
+    width: 431px;
     vertical-align: middle;
+  }
+}
+@media (min-width: 1200px) {
+  .Cover-Main {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .Cover-Main__Curso {
+    display: inline-block;
+    width: 649px;
+    vertical-align: middle;
+  }
+  .Cover-Main__Video {
+    display: inline-block;
+    width: 427px;
+    vertical-align: middle;
+    margin-right: 1.5em;
   }
 }
 .Learn-about__box {
