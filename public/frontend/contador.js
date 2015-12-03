@@ -27,11 +27,16 @@ diferenciaHoras2 = 0
 diferenciaMinutos2 = 0
 diferenciaSegundos2 = 0
 
-document.getElementById('tiempo').innerHTML = diferenciaDias + ":" + diferenciaHoras2 + ':' + diferenciaMinutos2 + ':' + diferenciaSegundos2
+document.getElementById('day').innerHTML = diferenciaDias;
+document.getElementById('hour').innerHTML = diferenciaHoras2;
+document.getElementById('min').innerHTML = diferenciaMinutos2;
+document.getElementById('sec').innerHTML = diferenciaSegundos2;
 }
 else{
-
-document.getElementById('tiempo').innerHTML = diferenciaDias + ":" +  diferenciaHoras2 + ':' + diferenciaMinutos2 + ':' + diferenciaSegundos2
+document.getElementById('day').innerHTML = diferenciaDias;
+document.getElementById('hour').innerHTML = diferenciaHoras2;
+document.getElementById('min').innerHTML = diferenciaMinutos2;
+document.getElementById('sec').innerHTML = diferenciaSegundos2;
 setTimeout('faltan()',1000)
 }
 }

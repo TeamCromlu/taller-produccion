@@ -346,7 +346,7 @@ body {
   content: "\e86c";
 }
 .Workshop {
-  padding: 2em 0;
+  padding: 4em 0;
   background-color: #fff;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -726,4 +726,98 @@ h2
   .Data-Time__Week .Week--days .week--day-class p {
     font-size: 1.3em;
   }
+}
+.Banner {
+  background-color: #02607c;
+  background-image: url("../image/banner.jpg");
+  width: 100%;
+  padding: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.Banner__box {
+  width: 90%;
+  margin: 0 auto;
+}
+.Banner__title {
+  width: 100%;
+}
+.Banner__title--text {
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+}
+.Banner__content {
+  width: 100%;
+}
+.Banner__content .Day--box-time {
+  display: block;
+  margin: 1em;
+  padding: 1em;
+  vertical-align: middle;
+}
+.Banner__content .Day--box-time .box--time__top {
+  display: block;
+  padding: 0.5em;
+}
+.Banner__content .Day--box-time .box--time__top .top-time {
+  display: inline-block;
+  padding: 0.1em;
+  background: #f9f6f6;
+  padding: 0.5em;
+  margin: 0.2em;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.Banner__content .Day--box-time .box--time__top .top-time h2 {
+  display: inline-block;
+  font-size: 2em;
+}
+.Banner__content .Day--box-time .box--time__top .top-time label {
+  display: block;
+}
+.Banner__content .Day--box-time .box--time__top p {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 0.2em;
+}
+.Banner__content .Day--box-time .box--time__bottom {
+  display: block;
+  padding: 0.5em;
+  font-size: 0.7em;
+}
+.Banner__logo {
+  width: 90%;
+  margin: 2em auto 1em auto;
+}
+.Banner__logo--image {
+  width: 200px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.Banner__button {
+  margin: 2em auto;
+  padding: 0.5em;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #00d10f;
+  border-bottom: 4px solid #168400;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+}
+.Banner__button--link {
+  text-align: center;
+  display: block;
+  font-size: 1.5em;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+}
+.Banner__button:hover {
+  background-color: #00e852;
+  border-bottom: 4px solid #00b845;
 }
