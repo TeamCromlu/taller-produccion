@@ -31,12 +31,23 @@ document.getElementById('day').innerHTML = diferenciaDias;
 document.getElementById('hour').innerHTML = diferenciaHoras2;
 document.getElementById('min').innerHTML = diferenciaMinutos2;
 document.getElementById('sec').innerHTML = diferenciaSegundos2;
+
+document.getElementById('dia').innerHTML = diferenciaDias;
+document.getElementById('hora').innerHTML = diferenciaHoras2;
+document.getElementById('minut').innerHTML = diferenciaMinutos2;
+document.getElementById('seconds').innerHTML = diferenciaSegundos2;
 }
 else{
 document.getElementById('day').innerHTML = diferenciaDias;
 document.getElementById('hour').innerHTML = diferenciaHoras2;
 document.getElementById('min').innerHTML = diferenciaMinutos2;
 document.getElementById('sec').innerHTML = diferenciaSegundos2;
+
+document.getElementById('dia').innerHTML = diferenciaDias;
+document.getElementById('hora').innerHTML = diferenciaHoras2;
+document.getElementById('minut').innerHTML = diferenciaMinutos2;
+document.getElementById('seconds').innerHTML = diferenciaSegundos2;
+
 setTimeout('faltan()',1000);
 }
 }
