@@ -596,13 +596,23 @@ body {
   padding-top: 3em;
   padding-bottom: 2em;
 }
+.Learn-about__box h2 {
+  font-size: 1.5em;
+}
 .Learn-about__item {
   display: inline-block;
   margin: 1.5em;
   margin-bottom: 2em;
 }
-.Learn-about__item h2 {
+.Learn-about__item h3 {
   font-size: 1.3em;
+  padding-top: 0.5em;
+}
+@media (min-width: 768px) {
+  .Learn-about h2,
+  __box h2 {
+    font-size: 2em;
+  }
 }
 .Data-Time {
   background: #ececec;
