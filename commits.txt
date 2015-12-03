@@ -1,0 +1,286 @@
+commit 24b8cd3a2e19581cf52fbc8d35accfb1a1291ed4
+Merge: 7b0ac4e 71c463a
+Author: Maycon <rx_reycel96@hotmail.com>
+Date:   Thu Dec 3 03:27:13 2015 -0500
+
+    Merge branch 'master' of https://github.com/TeamCromlu/taller-desarrollo
+
+commit 7b0ac4e37a2580d008092513c1fbb9919827a0c9
+Author: Maycon <rx_reycel96@hotmail.com>
+Date:   Thu Dec 3 03:26:53 2015 -0500
+
+    se arreglo banner
+
+commit 71c463aea664dad3f4f213559acd0839c1fe719a
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Thu Dec 3 02:50:42 2015 -0500
+
+    timer iconos
+
+commit 386f106d646da4ac12172fd10087972ee71507a6
+Author: Maycon <rx_reycel96@hotmail.com>
+Date:   Thu Dec 3 01:51:01 2015 -0500
+
+    se arreglo banner
+
+commit bd1d38ab72d8dd4ef93092a0ac4435859f0056ac
+Author: Maycon <rx_reycel96@hotmail.com>
+Date:   Thu Dec 3 01:37:00 2015 -0500
+
+    se arreglo banner
+
+commit 4a51ed0434c5aa2af57b31384f4ad1322528daf5
+Author: Maycon <rx_reycel96@hotmail.com>
+Date:   Thu Dec 3 01:25:14 2015 -0500
+
+    se arreglo banner
+
+commit 24dba12d69eef225dc6c14cb21c322973d0fca70
+Merge: 1844873 8f66e5e
+Author: Maycon <rx_reycel96@hotmail.com>
+Date:   Wed Dec 2 23:53:34 2015 -0500
+
+    Merge branch 'master' of https://github.com/TeamCromlu/taller-desarrollo
+
+commit 1844873141087d3110c87ed39a2aca2b678f24b8
+Author: Maycon <rx_reycel96@hotmail.com>
+Date:   Wed Dec 2 23:53:18 2015 -0500
+
+    se arreglo el baner inferior
+
+commit 8f66e5e3a044c8844a7d48f9fdf790a4cb63b169
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Wed Dec 2 23:23:00 2015 -0500
+
+    arreglo de cronometro
+
+commit ed379af50037bb7ee117c0a5396142ab12d503ed
+Merge: 06646c9 3e821c8
+Author: Maycon <rx_reycel96@hotmail.com>
+Date:   Wed Dec 2 23:08:21 2015 -0500
+
+    Merge branch 'master' of https://github.com/TeamCromlu/taller-desarrollo
+
+commit 06646c957f92c8720315c2fcef704cfe9d7c9c0b
+Author: Maycon <rx_reycel96@hotmail.com>
+Date:   Wed Dec 2 23:08:05 2015 -0500
+
+    se actualiza front
+
+commit 3e821c8895bfc903fb353dcf5c6cd021fb158ca3
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Wed Dec 2 22:54:03 2015 -0500
+
+    arreglado en mobile contador
+
+commit d34c9cf8b080cf7624188f64b837274e70930142
+Merge: a3c5c47 488f290
+Author: Maycon <rx_reycel96@hotmail.com>
+Date:   Wed Dec 2 22:09:09 2015 -0500
+
+    se hizo un pull
+
+commit a3c5c47598b459428d6da088f7fd926041ddb48e
+Author: Maycon <rx_reycel96@hotmail.com>
+Date:   Wed Dec 2 22:01:14 2015 -0500
+
+    se avanzo  secion del frontend
+
+commit 488f290701d5ff5bbb3200e13f031199fa29cd15
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Wed Dec 2 21:59:41 2015 -0500
+
+    front curso frontend cover arreglado
+
+commit 377aa1377dfcfb2908c87cccc61c1c859ad7165a
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Wed Dec 2 21:11:57 2015 -0500
+
+    layout curso frontend principal
+
+commit 229e581fc87f028367ce47720583c3e308eee72c
+Author: Maycon <rx_reycel96@hotmail.com>
+Date:   Wed Dec 2 13:31:09 2015 -0500
+
+    se actualizo cover de video
+
+commit f5859381493edc996428dd7663346aac603b86ad
+Author: Maycon <rx_reycel96@hotmail.com>
+Date:   Wed Dec 2 13:30:40 2015 -0500
+
+    se actualizo cover de video
+
+commit 6402a6003b2c0c835f7790799856c96ee9e437a6
+Merge: 2cf2b8d 29b47b5
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Tue Dec 1 19:42:48 2015 -0500
+
+    Merge branch 'master' of https://github.com/TeamCromlu/taller-desarrollo
+
+commit 2cf2b8d98c6cca13e7015bdd7d142cd784070bf2
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Tue Dec 1 19:42:07 2015 -0500
+
+    front back y git cursos aniadidos
+
+commit 29b47b5173bd86eb2d20237619a63b44f634dc2f
+Author: Maycon <rx_reycel96@hotmail.com>
+Date:   Tue Dec 1 19:40:36 2015 -0500
+
+    se termino de optimizar la seccion comenzar
+
+commit d712b8bd526bee071427bd39de1187e7a74abe40
+Author: Maycon <rx_reycel96@hotmail.com>
+Date:   Tue Dec 1 19:14:09 2015 -0500
+
+    se actualizo imagenes, se agrego iconos y se dio diseño a ver mas
+
+commit c1ed6faf67c9036c605a90e52e27c6b8b3b479fd
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Tue Dec 1 19:13:59 2015 -0500
+
+    cambios copy y camino para cursos
+
+commit 9b12b32aa5788f89fdea9a7729213ba20ce6c8cb
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Tue Dec 1 13:23:18 2015 -0500
+
+    conflicto de css estilos_layout para publico
+
+commit 15f1e199a9992faddea7203faba4ba6e9fa5ccb1
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Tue Dec 1 12:40:21 2015 -0500
+
+    camino de nav agregado ux
+
+commit 66472567facbad13cba43c3c29aaa723c020e699
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Tue Dec 1 12:24:45 2015 -0500
+
+    fuentes cambiadas en video inicio
+
+commit 953eb39cc888e0d9aacc7b8dd5c951a0f9bca56e
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Mon Nov 30 23:31:06 2015 -0500
+
+    copy basico aniadido
+
+commit 18e4dd9a49a900ee088fe160997fbfcc58173556
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Mon Nov 30 20:25:43 2015 -0500
+
+    cambios realizados
+
+commit 21c0e2ee754b3f882abf968a2c5994a52919b819
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Mon Nov 30 20:23:58 2015 -0500
+
+    cambios en public layoui
+
+commit 39a7fdd233e20618b54c58d649446f615b7b1156
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Mon Nov 30 18:55:08 2015 -0500
+
+    cambio en css de estilos_layout.css
+
+commit 482b47eef8315a476ded5e6380702de6fad22fda
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Mon Nov 30 18:42:41 2015 -0500
+
+    copy first phase
+
+commit 0fe2d61d78f2ea9f2160d1734376971c5c161b7d
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Mon Nov 30 15:41:52 2015 -0500
+
+    error 500 para redirecion  reaction mejorada
+
+commit f614dcbae292f0f02e48ca47548ff22c757fb737
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Thu Nov 26 13:51:52 2015 -0500
+
+    texto de error 500 para comprar curso
+
+commit 3c99a3be01f7a4586f37f1144af831302fab63f3
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Thu Nov 26 13:47:55 2015 -0500
+
+    error 404 y 500 rutas mejoradas
+
+commit 22615f49cec6555afe8d4aa6c6934ea1dd626a58
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Thu Nov 26 13:40:25 2015 -0500
+
+    redireccion 500
+
+commit 36db2917f2bc5454a40422083ca057b5b4d4a4a7
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Thu Nov 26 13:20:23 2015 -0500
+
+    seguridad base de datos mongodb en config
+
+commit 39a340a82f6c15c242b0719d85ac91ff8e40eaaf
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Thu Nov 26 12:54:16 2015 -0500
+
+    base produccion real funcional
+
+commit 8ab7d0d1eb24da43ab40d62c177e294a169b8aff
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Thu Nov 26 11:51:36 2015 -0500
+
+    data base cambiado
+
+commit d2a90ef54ce11513678cf74c578e659b59443fc3
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Thu Nov 26 11:42:59 2015 -0500
+
+    base de datos deploy aniaddida
+
+commit f24dd40dc2f47547d27f4f75d6d34422b7dd995d
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Thu Nov 26 10:02:17 2015 -0500
+
+    productiom
+
+commit 479e8884888873e73509e96b898d04b7f67dcb08
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Thu Nov 26 10:01:45 2015 -0500
+
+    ds
+
+commit 5ee16f269ba70ba8817915d01512a8c5aa3ea2d3
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Wed Nov 25 23:59:25 2015 -0500
+
+    archivo procfile
+
+commit e04a9da3a89fdfa4ff10a49dddaff82c2be48bcf
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Wed Nov 25 23:28:13 2015 -0500
+
+    css de public aniadido
+
+commit 02854a194e3021585542c42ec1cbd8a92f812a58
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Wed Nov 25 23:27:24 2015 -0500
+
+    vistas y nuevo layout mejorado
+
+commit 25a6083a69aaadb6d9c03cc76d600f5d4fa313d5
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Wed Nov 25 20:27:24 2015 -0500
+
+    mensajes aniadidos
+
+commit aef20aeb2d017ac5255e2454d3db467860601882
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Wed Nov 25 20:26:51 2015 -0500
+
+    chat actualizado con base de datos
+
+commit e79397cbd5113f78b45f98cf939065c9386e2ccd
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Wed Nov 25 02:52:45 2015 -0500
+
+    backend pro
