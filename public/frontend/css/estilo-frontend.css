@@ -269,6 +269,7 @@ body {
 }
 @media screen and (min-width: 767px) {
   .Temary__box {
+    padding: 4em 0 1em 0;
     width: 90%;
     display: -webkit-box;
     display: -moz-box;
