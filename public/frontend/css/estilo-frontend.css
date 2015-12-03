@@ -5,6 +5,8 @@
 }
 body {
   font-family: 'Open+Sans', 'Arial', sans-serif;
+  background: #fff;
+  color: #2f2f2f;
 }
 .Header {
   -webkit-box-shadow: 0px 4px 3px rgba(0,0,0,0.24);
@@ -413,5 +415,315 @@ body {
   .Workshop__contentBox {
     width: 21%;
     margin: 1em 1.8%;
+  }
+}
+.Cover-Main {
+  background: #9a9a9a;
+  width: 100%;
+  height: auto;
+}
+.Cover-Main__box {
+  padding-top: 8em;
+  padding-bottom: 2em;
+}
+.Cover-Main__Curso {
+  display: block;
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+.Cover-Main__Curso .Curso--logo {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 1em;
+}
+.Cover-Main__Curso .Curso--logo img {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.Cover-Main__Curso .Curso--copy {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+.Cover-Main__Curso .Curso--copy h1 {
+  font-size: 2em;
+  color: #fff;
+}
+.Cover-Main__Curso .Curso--copy p {
+  font-size: 1.2em;
+  color: #fff;
+  text-align: left;
+  padding: 15px;
+}
+.Cover-Main__Curso .Curso--copy a {
+  display: block;
+  background: #01e6d5;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  padding: 1em;
+  margin: 2em auto;
+  max-width: 350px;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 5px solid #058278;
+  font-size: 1.3em;
+}
+.Cover-Main__Video {
+  display: block;
+  background: #000;
+}
+.Cover-Main__Video .Video--box {
+  display: block;
+}
+.Cover-Main__Video .Video--box .video-content {
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+  overflow: hidden;
+}
+.Cover-Main__Video .Video--box iframe,
+.Cover-Main__Video .Video--box object,
+.Cover-Main__Video .Video--box embed,
+.Cover-Main__Video .Video--box video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+@media (min-width: 768px) {
+  .Cover-Main {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .Cover-Main__Curso {
+    display: block;
+  }
+  .Cover-Main__Curso .Curso--logo {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+  }
+  .Cover-Main__Curso .Curso--copy {
+    display: inline-block;
+    width: 69%;
+    text-align: left;
+    vertical-align: middle;
+  }
+  .Cover-Main__Curso .Curso--copy h1 {
+    font-size: 2.5em;
+  }
+  .Cover-Main__Curso .Curso--copy p {
+    font-size: 1.2em;
+  }
+  .Cover-Main__Curso .Curso--copy a {
+    text-align: center;
+    margin: 1em 1em;
+    width: 190px;
+    font-size: 1.3em;
+  }
+  .Cover-Main__Video {
+    display: block;
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 927px) {
+  .Cover-Main {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .Cover-Main__Curso {
+    display: inline-block;
+    width: 474px;
+    vertical-align: middle;
+  }
+  .Cover-Main__Video {
+    display: inline-block;
+    width: 431px;
+    vertical-align: middle;
+  }
+}
+@media (min-width: 1200px) {
+  .Cover-Main {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .Cover-Main__Curso {
+    display: inline-block;
+    width: 649px;
+    vertical-align: middle;
+  }
+  .Cover-Main__Video {
+    display: inline-block;
+    width: 427px;
+    vertical-align: middle;
+    margin-right: 1.5em;
+  }
+}
+.Learn-about__box {
+  text-align: center;
+  padding-top: 3em;
+  padding-bottom: 2em;
+}
+.Learn-about__item {
+  display: inline-block;
+  margin: 1.5em;
+  margin-bottom: 2em;
+}
+.Learn-about__item h2 {
+  font-size: 1.3em;
+}
+.Data-Time {
+  background: #ececec;
+}
+.Data-Time__box {
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.Data-Time__Day {
+  background: #e4e4e4;
+  padding: 2em;
+  display: block;
+  vertical-align: middle;
+  margin: 1em;
+}
+.Data-Time__Day p {
+  font-size: 1.5em;
+}
+.Data-Time__Day .Day--box-day {
+  background: #fff;
+  display: block;
+  padding: 1em 3em;
+  margin: 1em;
+  vertical-align: middle;
+  border: 1px solid #d3d3d3;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(0,0,0,0.18) 1px 1px 20px;
+  box-shadow: rgba(0,0,0,0.18) 1px 1px 20px;
+}
+.Data-Time__Day .Day--box-day h4 {
+  font-size: 1.4em;
+}
+.Data-Time__Day .Day--box-day h2 {
+  font-size: 2.2em;
+}
+.Data-Time__Day .Day--box-day h3 {
+  font-size: 1.5em;
+}
+.Data-Time__Day .Day--box-time {
+  display: block;
+  margin: 1em;
+  padding: 1em;
+  vertical-align: middle;
+}
+.Data-Time__Day .Day--box-time .box--time__top {
+  display: block;
+  padding: 0.5em;
+}
+.Data-Time__Day .Day--box-time .box--time__top .top-time {
+  display: inline-block;
+  padding: 0.1em;
+  background: #f9f6f6;
+  padding: 0.5em;
+  margin: 0.2em;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.Data-Time__Day .Day--box-time .box--time__top .top-time h2 {
+  display: inline-block;
+  font-size: 2em;
+}
+.Data-Time__Day .Day--box-time .box--time__top .top-time label {
+  display: block;
+}
+.Data-Time__Day .Day--box-time .box--time__top p {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 0.2em;
+}
+.Data-Time__Day .Day--box-time .box--time__bottom {
+  display: block;
+  padding: 0.5em;
+  font-size: 0.7em;
+}
+.Data-Time__Week {
+  background: #e4e4e4;
+  display: block;
+  vertical-align: middle;
+  padding: 2em;
+  border: 1px solid #000;
+  margin: 1em;
+}
+.Data-Time__Week h2 {
+  font-size: 1.5em;
+}
+.Data-Time__Week .Week--days {
+  padding-top: 0.5em;
+}
+.Data-Time__Week .Week--days .week--day-class {
+  display: inline-block;
+  background: #f1f1f1;
+  padding: 1em;
+  margin: 0.2em;
+h2
+}
+@media (min-width: 768px) {
+  .Data-Time__Day {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .Data-Time__Day p {
+    font-size: 2em;
+  }
+  .Data-Time__Day .Day--box-day {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 2em;
+  }
+  .Data-Time__Day .Day--box-day h4 {
+    font-size: 1.7em;
+  }
+  .Data-Time__Day .Day--box-day h2 {
+    font-size: 3.3em;
+  }
+  .Data-Time__Day .Day--box-day h3 {
+    font-size: 2em;
+  }
+  .Data-Time__Day .Day--box-time {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 1em 3em;
+  }
+  .Data-Time__Day .Day--box-time .box--time__top .top-time {
+    display: inline-block;
+  }
+  .Data-Time__Day .Day--box-time .box--time__top .top-time h2 {
+    font-size: 2.5em;
+  }
+  .Data-Time__Day .Day--box-time .box--time__top .top-time label {
+    font-size: 1.5em;
+  }
+  .Data-Time__Day .Day--box-time .box--time__top p {
+    font-size: 2.5em;
+  }
+  .Data-Time__Week {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .Data-Time__Week h2 {
+    font-size: 1.9em;
+  }
+  .Data-Time__Week .Week--days .week--day-class {
+    display: inline-block;
+    padding: 1em;
+    margin: 0.2em;
+  }
+  .Data-Time__Week .Week--days .week--day-class p {
+    font-size: 1.3em;
   }
 }
