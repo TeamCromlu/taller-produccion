@@ -888,7 +888,7 @@ h2
 }
 @media screen and (min-width: 767px) {
   .Banner {
-    padding: 3em 0;
+    padding: 1.5em 0;
   }
   .Banner__box {
     max-width: 800px;
@@ -918,6 +918,7 @@ h2
     width: 33%;
   }
   .Banner__logo {
+    margin: 0;
     width: 33%;
   }
   .Banner__button {
