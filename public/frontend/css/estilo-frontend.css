@@ -468,6 +468,7 @@ body {
   text-decoration: none;
   border-bottom: 5px solid #058278;
   font-size: 1.3em;
+  width: 230px;
 }
 .Cover-Main__Video {
   display: block;
@@ -617,26 +618,22 @@ body {
 }
 .Data-Time__Day .Day--box-time {
   display: block;
-  margin: 1em;
-  padding: 1em;
   vertical-align: middle;
 }
 .Data-Time__Day .Day--box-time .box--time__top {
   display: block;
-  padding: 0.5em;
 }
 .Data-Time__Day .Day--box-time .box--time__top .top-time {
   display: inline-block;
-  padding: 0.1em;
+  padding: 0.3em;
   background: #f9f6f6;
-  padding: 0.5em;
   margin: 0.2em;
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
 .Data-Time__Day .Day--box-time .box--time__top .top-time h2 {
   display: inline-block;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .Data-Time__Day .Day--box-time .box--time__top .top-time label {
   display: block;
@@ -698,9 +695,14 @@ h2
     display: inline-block;
     vertical-align: middle;
     padding: 1em 3em;
+    margin: 1em;
+  }
+  .Data-Time__Day .Day--box-time .box--time__top {
+    padding: 0.3em;
   }
   .Data-Time__Day .Day--box-time .box--time__top .top-time {
     display: inline-block;
+    padding: 0.5em;
   }
   .Data-Time__Day .Day--box-time .box--time__top .top-time h2 {
     font-size: 2.5em;
