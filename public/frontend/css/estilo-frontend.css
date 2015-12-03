@@ -673,6 +673,15 @@ body {
   margin: 0.2em;
 h2
 }
+@media (min-width: 400px) {
+  .Data-Time__Day .Day--box-time .box--time__top {
+    padding: 0.3em;
+  }
+  .Data-Time__Day .Day--box-time .box--time__top .top-time {
+    display: inline-block;
+    padding: 0.5em;
+  }
+}
 @media (min-width: 768px) {
   .Data-Time__Day {
     display: inline-block;
