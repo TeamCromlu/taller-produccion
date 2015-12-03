@@ -1,0 +1,113 @@
+.Banner
+	background-color #2A2A2A
+	background-image url('../image/banner.jpg')
+	background-size cover
+	background-repeat no-repeat
+	width 100%
+	padding 3.4em 0
+	box-sizing border-box
+	&__box
+		width 90%
+		margin 0 auto
+	&__title
+		width 100%
+		&--text
+			color white
+			font-size 2em
+			text-align center
+	&__content
+		width 100%
+		.Day--box-time
+			// background skyblue
+			display block
+			margin 0 auto
+			// padding 1em
+			vertical-align middle			
+			p
+				text-align center
+				font-size 1em
+				font-weight bold
+				color white
+			.box--time__top
+				text-align center
+				// background peru
+				// display block
+				padding .5em
+				.top-time
+					// background orange
+					display inline-block
+					padding .5em
+					background #F9F6F6
+					// padding .5em
+					margin .2em
+					border-radius 8px
+					
+					h2
+						display inline-block
+						font-size 1.5em
+					label
+						display block
+				p
+					font-size 1.4em
+					color white
+					display inline-block
+					vertical-align top
+					padding-top .2em
+			.box--time__bottom
+				// background green
+				display block
+				padding .5em
+				font-size .7em
+	&__logo
+		width 90%
+		margin 2em auto 1em auto
+		text-align center
+		&--image
+			max-width 150px
+			width 100%
+			border-radius 50%
+	&__button
+		width 80%
+		max-width 200px
+		cursor pointer
+		margin 2em auto
+		padding 1em
+		border-radius 50px 
+		background-color #00E6D5
+		border-bottom 5px solid #0C988E
+		transition .2s
+		&--link
+			text-align center
+			display block
+			font-size 1.5em
+			text-decoration none
+			font-weight bold
+			color white
+		&:hover
+			background-color #16CEC1
+
+@media screen and (min-width 767px)
+	.Banner
+		padding 3.4em 0
+		&__box
+			max-width 800px
+			width 100%
+		&__content
+			display flex
+			flex-direction row
+			align-items center
+			.Day--box-time
+				width 40%
+				// vertical-align top
+				// display inline-block
+		&__logo
+			margin 0
+			width 33%
+			// vertical-align top
+			// display inline-block
+		&__button
+			height 28px
+			// margin 80px 0
+			width 33%
+			// display inline-block
+			// vertical-align top

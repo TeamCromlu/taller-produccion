@@ -1,0 +1,146 @@
+.Cover-Main
+	background #9A9A9A
+	background-image url('../image/cover.jpg')
+	background-size cover
+	background-repeat no-repeat
+	width 100%
+	height auto
+	&__box
+		padding-top 8em
+		padding-bottom	2em
+		
+	&__Curso
+		display block
+		padding-top 2em
+		padding-bottom 3em
+		
+		
+		.Curso--logo
+			display block
+			text-align center
+			margin 0 auto
+			padding-bottom 1em
+			img
+				border-radius 50%
+				
+		.Curso--copy
+			display block
+			text-align center
+			margin 0 auto
+			
+			h1
+				font-size 2em
+				color white
+			p
+				font-size 1.2em
+				color white
+				text-align left
+				padding 15px
+			a
+				display block
+				background-color #00E6D5
+				border-radius 20px
+				padding 1em
+				// width 100%
+				margin 2em auto
+				max-width 300px
+				color white
+				font-weight bold
+				text-decoration none
+				border-bottom 5px solid #0C988E
+				font-size 1.5em
+				transition .3s
+				&:hover
+					background-color #16CEC1
+					// border 3px solid #00E6D5
+				
+					
+	&__Video
+		display block
+		background #000000
+		.Video--box
+			display block
+			.video-content
+				height 0
+				padding-bottom 56.25%
+				position relative
+				overflow hidden
+			iframe,
+			object,
+			embed,
+			video
+				width 100%
+				height 100%
+				position absolute
+				right 0
+				left 0
+				
+@media (min-width 768px)
+	.Cover-Main
+		text-align center
+		margin 0 auto
+		&__Curso
+			// background yellow
+			display block
+			// width 30%
+			// text-align center
+			// margin 0 auto
+			.Curso--logo
+				display inline-block
+				width 30%
+				vertical-align middle
+			.Curso--copy
+				display inline-block
+				width 69%
+				text-align left
+				vertical-align middle
+				
+				h1
+					font-size 2.5em
+				p
+					font-size 1.2em
+				a
+					text-align center
+					margin 1em 1em
+					width 190px
+					font-size 1.3em
+		&__Video
+			display block
+			width 600px
+			text-align	center
+			margin	0 auto
+				
+@media (min-width 927px)
+	.Cover-Main
+		text-align center
+		margin 0 auto
+		&__Curso
+			// background yellow
+			display inline-block
+			width 474px
+			vertical-align	middle
+			// text-align center
+			// margin 0 auto
+
+		&__Video
+			display inline-block
+			width 431px
+			vertical-align	middle
+			
+@media (min-width 1200px)
+	.Cover-Main
+		text-align center
+		margin 0 auto
+		&__Curso
+			// background yellow
+			display inline-block
+			width 649px
+			vertical-align	middle
+			// text-align center
+			// margin 0 auto
+
+		&__Video
+			display inline-block
+			width 427px
+			vertical-align	middle
+			margin-right 1.5em
