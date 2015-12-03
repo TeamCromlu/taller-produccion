@@ -1,3 +1,15 @@
+commit 8ffea8d1a16730dc143e6cb965de7cf6184add0a
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Thu Dec 3 03:42:48 2015 -0500
+
+    estilos css front lear aniadido
+
+commit b6f50a3a49e6ab31f3cb06cf2e14785079fbec7b
+Author: Joel Gonzales Tipismana <joelengt@gmail.com>
+Date:   Thu Dec 3 03:38:30 2015 -0500
+
+    title learn aniadido
+
 commit 24b8cd3a2e19581cf52fbc8d35accfb1a1291ed4
 Merge: 7b0ac4e 71c463a
 Author: Maycon <rx_reycel96@hotmail.com>

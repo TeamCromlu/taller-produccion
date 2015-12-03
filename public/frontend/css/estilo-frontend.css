@@ -242,8 +242,8 @@ body {
   width: 90%;
   margin: 1em auto;
   text-align: center;
-  background-color: #226fbe;
-  border: 3px solid #226fbe;
+  background-color: #00e6d5;
+  border-bottom: 5px solid #0c988e;
   -webkit-border-radius: 50px;
   border-radius: 50px;
   -webkit-transition: 0.3s;
@@ -253,11 +253,7 @@ body {
   transition: 0.3s;
 }
 .Temary__workshop--button:hover {
-  border: 3px solid #1b538c;
-  background-color: #fff;
-}
-.Temary__workshop--button:hover a.Temary__workshop--actionButton {
-  color: #1b538c;
+  background-color: #16cec1;
 }
 .Temary__workshop--actionButton {
   display: block;
@@ -365,6 +361,8 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 .Workshop__box {
   margin: 0 auto;
@@ -476,16 +474,16 @@ body {
 }
 .Cover-Main__Curso .Curso--copy a {
   display: block;
-  background-color: #ffc000;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
+  background-color: #00e6d5;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
   padding: 1em;
   margin: 2em auto;
   max-width: 300px;
   color: #fff;
   font-weight: bold;
   text-decoration: none;
-  border: 3px solid #fff;
+  border-bottom: 5px solid #0c988e;
   font-size: 1.5em;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -494,9 +492,7 @@ body {
   transition: 0.3s;
 }
 .Cover-Main__Curso .Curso--copy a:hover {
-  background-color: #fff;
-  border: 3px solid #ffc000;
-  color: #ffc000;
+  background-color: #16cec1;
 }
 .Cover-Main__Video {
   display: block;
@@ -656,26 +652,23 @@ body {
 }
 .Data-Time__Day .Day--box-time {
   display: block;
-  margin: 1em;
-  padding: 1em;
   vertical-align: middle;
 }
 .Data-Time__Day .Day--box-time .box--time__top {
   display: block;
   padding: 0.5em;
+  width: 100%;
 }
 .Data-Time__Day .Day--box-time .box--time__top .top-time {
   display: inline-block;
-  padding: 0.1em;
+  padding: 0.4em;
   background: #f9f6f6;
-  padding: 0.5em;
-  margin: 0.2em;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
 }
 .Data-Time__Day .Day--box-time .box--time__top .top-time h2 {
   display: inline-block;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .Data-Time__Day .Day--box-time .box--time__top .top-time label {
   display: block;
@@ -709,7 +702,6 @@ body {
   background: #f1f1f1;
   padding: 1em;
   margin: 0.2em;
-h2
 }
 @media (min-width: 400px) {
   .Data-Time__Day .Day--box-time .box--time__top {
@@ -718,6 +710,11 @@ h2
   .Data-Time__Day .Day--box-time .box--time__top .top-time {
     display: inline-block;
     padding: 0.5em;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+  .Data-Time__Day .Day--box-time .box--time__top .top-time h2 {
+    font-size: 2em;
   }
 }
 @media (min-width: 768px) {
@@ -776,14 +773,14 @@ h2
   }
 }
 .Banner {
-  background-color: #02607c;
+  background-color: #2a2a2a;
   background-image: url("../image/banner.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  padding: 3em 0;
+  padding: 3.4em 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -820,7 +817,7 @@ h2
 }
 .Banner__content .Day--box-time .box--time__top .top-time {
   display: inline-block;
-  padding: 0.1em;
+  padding: 0.5em;
   background: #f9f6f6;
   margin: 0.2em;
   -webkit-border-radius: 8px;
@@ -864,8 +861,8 @@ h2
   padding: 1em;
   -webkit-border-radius: 50px;
   border-radius: 50px;
-  background-color: #2ecc71;
-  border: 3px solid #fff;
+  background-color: #00e6d5;
+  border-bottom: 5px solid #0c988e;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
   -o-transition: 0.2s;
@@ -881,15 +878,11 @@ h2
   color: #fff;
 }
 .Banner__button:hover {
-  border: 3px solid #2ecc71;
-  background-color: #fff;
-}
-.Banner__button:hover a {
-  color: #2ecc71;
+  background-color: #16cec1;
 }
 @media screen and (min-width: 767px) {
   .Banner {
-    padding: 1.5em 0;
+    padding: 3.4em 0;
   }
   .Banner__box {
     max-width: 800px;
@@ -916,7 +909,7 @@ h2
     align-items: center;
   }
   .Banner__content .Day--box-time {
-    width: 33%;
+    width: 40%;
   }
   .Banner__logo {
     margin: 0;
