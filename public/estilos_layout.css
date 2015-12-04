@@ -6,8 +6,9 @@ html {
   color: #171717;
 }
 body {
+  color: #f00;
   background: #d3d3d3;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Arial';
 }
 .Header {
   box-shadow: 0px 4px 3px rgba(0,0,0,0.24);
@@ -163,7 +164,7 @@ body {
   text-align: center;
 }
 .Front__text h2 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway' sans-serif;
   padding: 0.5em 0;
   font-size: 2em;
   color: #fff;
