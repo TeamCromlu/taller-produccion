@@ -4,7 +4,7 @@
 }
 body {
   background: #f2f2f2;
-  font-family: Open Sans;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   color: #2e2f33;
 }
 .Header-Main {
@@ -22,7 +22,7 @@ body {
 .Header-Main__logo a {
   text-decoration: none;
   color: #3a3a3a;
-  font-family: 'Arial' sans-serif;
+  font-family: 'Arial', sans-serif;
 }
 .Header-Main__logo a img {
   width: 50px;

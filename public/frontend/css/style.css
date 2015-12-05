@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: 'Questrial' sans-serif;
 }
 body {
   background: #fff;
   height: 100vh;
+  font-family: 'Arial', sans-serif;
 }
 body::-webkit-scrollbar {
   background: #fff;
@@ -30,15 +30,6 @@ body::-webkit-scrollbar-thumb {
 }
 .ocultar {
   display: none;
-}
-.rec a {
-  color: #da002c;
-  text-shadow: 0px 0px 5px #f39292;
-}
-.rec a:hover {
-  background-color: transparent;
-  color: #008400;
-  text-shadow: 0px 0px 5px #119e00;
 }
 .Frontend__wait {
   -webkit-box-shadow: 0px 0px 5px #999;
