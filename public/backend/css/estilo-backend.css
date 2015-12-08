@@ -413,6 +413,7 @@ body {
   font-size: 1.2em;
   width: 90%;
   margin: 0.5em auto;
+  color: #525252;
 }
 @media screen and (min-width: 767px) {
   .Workshop__contentBox {
@@ -612,7 +613,10 @@ body {
   }
 }
 .Data-Time {
-  background: #ececec;
+  background: #443751;
+  background-image: url('../image/1-big.jpg');
+  background-size: cover;
+  background-repeat:  no-repeat;  
 }
 .Data-Time__box {
   text-align: center;
@@ -620,7 +624,7 @@ body {
   padding-bottom: 2em;
 }
 .Data-Time__Day {
-  background: #e4e4e4;
+  background: rgba(228, 228, 228, 0.75);
   padding: 2em;
   display: block;
   vertical-align: middle;
@@ -684,7 +688,7 @@ body {
   font-size: 0.7em;
 }
 .Data-Time__Week {
-  background: #e4e4e4;
+  background: rgba(228, 228, 228, 0.75);
   display: block;
   vertical-align: middle;
   padding: 2em;
