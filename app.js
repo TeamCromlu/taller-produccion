@@ -93,6 +93,10 @@ app.get('/login-again', function (req, res){
   login_again();
 });
 
+app.get('/politicas-seguridad', function (req, res){
+  res.render("politicas-seguridad");
+});
+
 app.get('/register_new_user_token5985555213BMDXM', function (req, res){
 
   res.render('register_serial');

@@ -24,14 +24,9 @@ html(lang='es')
     section.Networking 
      .Networking__box
        h2 Ingresa a tus clases
+       p Accede a nuestra plataforma, con tus redes sociales
        a(href="auth/facebook", class="color-facebook") Facebook
        a(href="auth/twitter", class="color-twitter") Twitter
-       p #{message}
-     //- .admin
-     //-    h1 ¿Tienes un acceso por usuario y contraseña?
-     //-    form(action="/cursos", method="post")
-     //-      label Tu nombre 
-     //-      input(type="text", name="usuario")
-     //-      label Tu contraseña
-     //-      input(type="password", name="clave")
-     //-      input(type="submit", name="enviar")
+       .Networking_politic-private
+         p Tu privacidad esta segura
+         a(class="link-privacidad", href="/politicas-seguridad") Politicas de Privacidad
