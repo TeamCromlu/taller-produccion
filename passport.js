@@ -41,20 +41,20 @@ var logear = function(passport) {
 				return done(null, user);
 			} else {
 				// Si no existe crea un nuevo objecto usuario
-				// var user = new User({
-				// 	provider_id	: profile.id,
-				// 	provider	: profile.provider,
-				// 	name		: profile.displayName,
-				// 	photo		: profile.photos[0].value
-				// });
-				// //...y lo almacena en la base de datos
-				// user.save(function(err) {
-				// 	if(err) throw err;
-				// 	done(null, user);
-				// });
+				var user = new User({
+					provider_id	: profile.id,
+					provider	: profile.provider,
+					name		: profile.displayName,
+					photo		: profile.photos[0].value
+				});
+				//...y lo almacena en la base de datos
+				user.save(function(err) {
+					if(err) throw err;
+					done(null, user);
+				});
 
 				// Si no exite
-				return done(null, false);
+				// return done(null, false);
 			}
 		});
 	}));
@@ -77,19 +77,19 @@ var logear = function(passport) {
 			}else{
 			// Al igual que antes, si el usuario ya existe lo devuelve
 			// y si no, lo crea y salva en la base de datos
-				// var user = new User({
-				// 	provider_id	  : profile.id,
-				// 	provider	  : profile.provider,
-				// 	name		  : profile.displayName,
-				// 	photo		  : profile.photos[0].value
-				// });
-				// user.save(function(err) {
-				// 	if(err) throw err;
-				// 	done(null, user);
-				// });
+				var user = new User({
+					provider_id	  : profile.id,
+					provider	  : profile.provider,
+					name		  : profile.displayName,
+					photo		  : profile.photos[0].value
+				});
+				user.save(function(err) {
+					if(err) throw err;
+					done(null, user);
+				});
 
 				// Si no exite
-				return done(null, false);
+				// return done(null, false);
 			}
 		});
 	}));
