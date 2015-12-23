@@ -163,8 +163,6 @@ app.post('/admin/panel', function  (req, res){
                           // res.locals.users = users;
                           if(err) res.send(500, err.message);
 
-                          console.log('GET/users')
-                            // res.status(200).jsonp(users);
                           return res.render('users', {master : admin.usuario, users : users});
                         });
                   })
