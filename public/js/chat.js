@@ -1,22 +1,3 @@
-// var b=document.getElementById("boton");
-// b.addEventListener("click",proceso);
-// // var avatar=document.getElementById("avatar");
-// var usuario=document.getElementById("usuario");
-// var mensaje=document.getElementById("mensaje");
-
-
-// function proceso(){
-// 	var t= document.querySelector("template");
-// 	var clone=document.importNode(t.content,true);
-	
-// 	var title_model= "mmasmdas";
-// 	var	content_model= "#{mensaje}";
-// 	clone.querySelector("h3").innerHTML=title_model;
-// 	clone.querySelector("p").innerHTML=content_model;
-
-// 	document.body.appendChild(clone);
-// 	// return false
-// }
 var socket = io();
 
 $('form').submit("keypress", function (event){
